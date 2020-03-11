@@ -111,6 +111,22 @@
             }
         },
         {
+            "Key": "8721c34f-c271-49d3-8fce-9cb3d4cec70b",
+            "Value": {
+                "id": "9696bae8-a80a-4a23-8b4a-e684f359d33f",
+                "resourcePath": "notes\/README.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "8c02d627-72ae-4f86-9376-6897d3cd3ff4",
+            "Value": {
+                "id": "0e29cbce-3b28-4e86-b7b4-25f872ef7689",
+                "resourcePath": "objects\/obj_button\/obj_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "925ec6ac-a680-44da-8d46-07fe55274aa2",
             "Value": {
                 "id": "71438b0f-3360-46c5-9928-6646bf70ee8c",
@@ -175,6 +191,14 @@
             }
         },
         {
+            "Key": "bdc4271b-01c4-4af5-a173-557090af0c66",
+            "Value": {
+                "id": "522cf96a-4e78-4a00-bedb-cd8c5373111f",
+                "resourcePath": "fonts\/ft_button\/ft_button.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "b6ce089b-70ba-49b1-91b7-26e3bccce706",
@@ -196,6 +220,14 @@
                 "id": "7bbcec38-7c3d-4058-9d10-23c427d509a4",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f8edd096-bdfa-45ef-8493-ba01048cd436",
+            "Value": {
+                "id": "067f0624-88b7-4512-84b9-e2e50457edba",
+                "resourcePath": "objects\/obj_buttoncreator\/obj_buttoncreator.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
