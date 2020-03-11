@@ -24,6 +24,9 @@ if(hover == 1){
 		switch(BUTTON_TYPE){
 			
 			case 1: //Play
+				with(obj_buttoncreator){
+					event_user(2);
+				}
 				room_goto(rm_house);
 			break;
 				
