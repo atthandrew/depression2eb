@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 myTextbox = noone;
-
 awaitinput = false;
 
-myText[0] = "obj_activityex page 1";
-myText[1] = "obj_activityex page 2";
+myText[0] = "An example activity to demonstrate functionality";
+myText[1] = "Perform Activity? (Y to accept, N to reject)";
+
+myName = "activityex";
