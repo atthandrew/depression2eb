@@ -7,7 +7,7 @@
         "28c919db-2e20-4447-8c6c-efc729189d7d"
     ],
     "filterType": "GMObject",
-    "folderName": "activities",
+    "folderName": "Activities",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
