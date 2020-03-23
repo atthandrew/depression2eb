@@ -2,7 +2,7 @@
     "id": "62fd9688-f60b-448e-a990-acbf2b15b7fe",
     "modelName": "GMFont",
     "mvc": "1.1",
-    "name": "ft_button1",
+    "name": "ft_textbox",
     "AntiAlias": 1,
     "TTFName": "",
     "ascenderOffset": 0,
