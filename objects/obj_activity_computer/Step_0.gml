@@ -1,6 +1,6 @@
+// Inherit the parent event
 event_inherited();
 
-//Handle user input from the textbox for certain pages
 if(myTextbox != noone){
 	if(myTextbox.page == 1){
 		awaitinput = true;

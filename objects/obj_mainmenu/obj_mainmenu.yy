@@ -2,7 +2,7 @@
     "id": "f8edd096-bdfa-45ef-8493-ba01048cd436",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_buttoncreator",
+    "name": "obj_mainmenu",
     "eventList": [
         {
             "id": "fb4da740-fc9d-44e4-bb77-73a65e672784",
@@ -48,7 +48,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

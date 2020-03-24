@@ -24,14 +24,14 @@ if(hover == 1){
 		switch(BUTTON_TYPE){
 			
 			case 1: //Play
-				with(obj_buttoncreator){
+				with(obj_mainmenu){
 					event_user(2);
 				}
 				room_goto(rm_house);
 			break;
 				
 			case 2: //Options
-				with(obj_buttoncreator){
+				with(obj_mainmenu){
 					event_user(0);
 				}
 			break;
@@ -41,7 +41,7 @@ if(hover == 1){
 			break;
 			
 			case 4: //Options - Back to Main
-				with(obj_buttoncreator){
+				with(obj_mainmenu){
 					event_user(1);	
 				}
 			break;

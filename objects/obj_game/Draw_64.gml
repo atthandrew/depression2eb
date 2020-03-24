@@ -7,7 +7,7 @@ draw_text(20, 20, "day = " + string(day));
 draw_text(20, 40, "progress = " + string(progress));
 
 if(instance_exists(obj_player)){
-	draw_text(20, 60, "energy = " + string(obj_player.energy));
-	draw_text(20, 80, "stats(m,p,s) = (" + string(obj_player.mHealth) + "," + 
-		string(obj_player.pHealth) + "," + string(obj_player.sHealth) + ")");
+	draw_text(20, 60, "energy = " + string(energy));
+	draw_text(20, 80, "stats(m,p,s) = (" + string(mHealth) + "," + 
+		string(pHealth) + "," + string(sHealth) + ")");
 }
