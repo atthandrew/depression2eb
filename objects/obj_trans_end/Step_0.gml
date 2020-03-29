@@ -8,6 +8,9 @@ if(myTextbox.page == 1){
 		awaitinput = false;
 		
 		instance_destroy(myTextbox);
+		obj_game.mHealth = 5;
+		obj_game.pHealth = 5;
+		obj_game.sHealth = 5;
 		obj_game.progress = 1;
 		obj_game.day = 0;
 		obj_game.energy = 3;
