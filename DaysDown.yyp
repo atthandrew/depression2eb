@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "dd5dcc48-06f6-4f51-a692-efae97771370",
+            "Value": {
+                "id": "74a23594-9495-4899-8707-f4ebf13eebc8",
+                "resourcePath": "objects\/obj_pausemenu\/obj_pausemenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f249ad3c-7cd6-4e4e-b7e1-c35338c6c3ab",
             "Value": {
                 "id": "86c3e652-f5a0-4955-a92b-166d530548df",

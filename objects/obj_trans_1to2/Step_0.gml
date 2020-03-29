@@ -5,9 +5,22 @@ event_inherited();
 if(myTextbox.page == 1){
 	awaitinput = true;
 	if(keyboard_check_pressed(ord("Y"))){
-		//advance_textbox_page(myTextbox, self);
-		//awaitinput = false;
+		awaitinput = false;
 		instance_destroy(myTextbox);
 		room_goto(rm_house);
+	}
+	
+	if(keyboard_check_pressed(ord("N"))){
+		awaitinput = false;
+		
+		instance_destroy(myTextbox);
+		
+		//reset variables
+		obj_game.progress = 1;
+		obj_game.day = 0;
+		obj_game.energy = 3;
+		
+		//recreate main menu buttons
+		room_goto(rm_mainmenu);
 	}
 }

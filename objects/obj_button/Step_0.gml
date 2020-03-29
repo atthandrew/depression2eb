@@ -23,6 +23,8 @@ if(hover == 1){
 	if(mouse_check_button_released(mb_left)){
 		switch(BUTTON_TYPE){
 			
+			//MAIN MENU BUTTONS
+			
 			case 1: //Play
 				with(obj_mainmenu){
 					event_user(2);
@@ -43,6 +45,20 @@ if(hover == 1){
 			case 4: //Options - Back to Main
 				with(obj_mainmenu){
 					event_user(1);	
+				}
+			break;
+			
+			//OPTIONS MENU BUTTONS
+			
+			case 5: //Resume button pressed
+				with(obj_pausemenu){
+					event_user(2);
+				}
+			break;
+			
+			case 6: //Quit to Main button pressed
+				with(obj_pausemenu){
+					event_user(4);
 				}
 			break;
 			

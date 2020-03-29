@@ -4,6 +4,9 @@ if(energy == 0){
 	switch(progress){
 		case 1:	
 			energy = 3;
+			mHealth = 5;
+			pHealth = 5;
+			sHealth = 5;
 			day++;
 			progress++;
 			room_goto(rm_day1to2);

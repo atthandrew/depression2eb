@@ -1,5 +1,6 @@
 day = 0;
 progress = 1;
+paused = false;
 
 //Energy to perform activities
 energy = 3;
