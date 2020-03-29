@@ -1,7 +1,7 @@
 myTextbox = noone;
 awaitinput = false;
 
-myText[0] = "Do some laundry";
-myText[1] = "Perform Activity? (Y to accept, N to reject)";
+myText[0] = "Do your laundry";
+myText[1] = "Perform Activity? (1 to accept, 2 to reject)";
 
 myName = "Laundry";
