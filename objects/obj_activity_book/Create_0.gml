@@ -3,7 +3,7 @@
 myTextbox = noone;
 awaitinput = false;
 
-myText[0] = "An example activity to demonstrate functionality";
+myText[0] = "Read a book";
 myText[1] = "Perform Activity? (Y to accept, N to reject)";
 
-myName = "activityex";
+myName = "Book";

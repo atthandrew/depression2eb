@@ -2,7 +2,7 @@
     "id": "02010f29-bd35-4911-8da9-6ac43661bec1",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_activityex",
+    "name": "spr_activity_book",
     "For3D": false,
     "HTile": false,
     "VTile": false,
