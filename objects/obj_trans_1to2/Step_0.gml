@@ -6,6 +6,7 @@ if(myTextbox.page == 1){
 	awaitinput = true;
 	if(keyboard_check_pressed(ord("Y"))){
 		awaitinput = false;
+		special_activity_effects();
 		instance_destroy(myTextbox);
 		room_goto(rm_house);
 	}

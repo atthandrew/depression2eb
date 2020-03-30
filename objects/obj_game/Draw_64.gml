@@ -5,6 +5,7 @@ draw_set_color(c_white);
 
 draw_text(20, 20, "day = " + string(day));
 draw_text(20, 40, "progress = " + string(progress));
+draw_text(20, 100, "days since shower = " + string(days_since_shower));
 
 if(instance_exists(obj_player)){
 	draw_text(20, 60, "energy = " + string(energy));

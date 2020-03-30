@@ -1,4 +1,4 @@
-/// @description advance_textbox_page(obj_textbox)
+/// @description advance_textbox_page(obj_textbox, obj_activity)
 myTextbox = argument0;
 textboxCreator = argument1;
 

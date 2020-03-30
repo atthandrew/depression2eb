@@ -9,3 +9,6 @@ energy = 3;
 pHealth = 5;
 mHealth = 5;
 sHealth = 5; 
+
+//Special Activity Day counters
+days_since_shower = 1;
