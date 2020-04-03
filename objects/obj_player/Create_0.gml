@@ -1,2 +1,2 @@
 //Movement speed
-spd = 3;
+spd = 4;

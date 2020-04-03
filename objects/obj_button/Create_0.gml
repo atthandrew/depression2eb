@@ -15,3 +15,7 @@ hoverValue = 0;
 hoverColor = c_dkgray;
 
 alarm[0] = 1;
+
+buttonX = 0;
+buttonY = 0;
+offset = 0;

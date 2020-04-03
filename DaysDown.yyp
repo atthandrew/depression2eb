@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "2e835af3-d369-415c-b0f7-6745489f7e61",
+            "Value": {
+                "id": "3612f980-0c66-4a14-a083-74b172c69c85",
+                "resourcePath": "objects\/obj_camera\/obj_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36491178-9883-4a3e-b54a-ca627060e2f2",
             "Value": {
                 "id": "392f876a-44c3-4b2a-9cee-f4b0af3649e4",
@@ -178,7 +186,7 @@
             "Key": "45690131-a5a5-4c91-a9bd-d17e8a4faeb0",
             "Value": {
                 "id": "daf82033-6eae-43c3-ac9e-ac265ff69cf9",
-                "resourcePath": "objects\\obj_activity_book\\obj_activity_book.yy",
+                "resourcePath": "objects\/obj_activity_book\/obj_activity_book.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -466,7 +474,7 @@
             "Key": "d13364e2-d4a6-4909-bb06-ee3382941eee",
             "Value": {
                 "id": "13c02fa1-74c7-4eb4-89b9-f2562fb6e7c3",
-                "resourcePath": "sprites\\spr_activity_book\\spr_activity_book.yy",
+                "resourcePath": "sprites\/spr_activity_book\/spr_activity_book.yy",
                 "resourceType": "GMSprite"
             }
         },

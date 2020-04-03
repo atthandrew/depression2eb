@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //Check mouse hover:
-if (point_in_rectangle(mouse_x, mouse_y, x-width, y-height, x+width, y+height)){
+if (point_in_rectangle(mouse_x, mouse_y, x-width, y-height+offset, x+width, y+height+offset)){
 	hover = 1;
 	hoverColor = c_silver;
 

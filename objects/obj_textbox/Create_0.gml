@@ -14,3 +14,4 @@ stringHeight = string_height(text);
 boxX = 0;
 boxY = window_get_height() - 256;
 
+
