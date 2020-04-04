@@ -12,23 +12,10 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth++;
 				obj_game.sHealth--;
-				daysPracticed++;
 			
-				if (daysPracticed == practiceComplete)
-				{
-					myText[1] = "You mastered a new song! (P+)";
-					obj_game.pHealth++;
-					advance_textbox_page(myTextbox, self);
-					awaitinput = false;
-					practiceComplete = 0;
-					daysPracticed = 0;
-				}
-				else
-				{
-					myText[1] = "You practiced your songs."
-					advance_textbox_page(myTextbox, self);
-					awaitinput = false;
-				}
+				myText[1] = "The house looks much better now";
+				advance_textbox_page(myTextbox, self);
+				awaitinput = false;
 			}
 			else
 			{
@@ -40,14 +27,9 @@ if(myTextbox != noone){
 	
 		if(keyboard_check_pressed(ord("2")))
 		{
-			myText[1] = "Practice might make perfect, but that takes work.";
+			myText[1] = "You haven't seen any cockroaches yet.";
 			advance_textbox_page(myTextbox, self);
 			awaitinput = false;
 		}
 	}
-}
-
-if (practiceComplete == 0)
-{
-	practiceComplete = irandom_range(5, 8)
 }

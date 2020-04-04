@@ -8,7 +8,10 @@
         "0b446394-914b-472a-a3cf-87426c2a8eb7",
         "a246f112-c600-497b-9bc9-871e635b67b5",
         "cf3ea058-d1a9-4b3b-a061-5143fe635549",
-        "45690131-a5a5-4c91-a9bd-d17e8a4faeb0"
+        "45690131-a5a5-4c91-a9bd-d17e8a4faeb0",
+        "a620918c-450e-46f7-96f0-3fb543ace687",
+        "ad8673cd-e3fb-4be2-94b6-5a24191ebfc1",
+        "d6c4d4d0-1815-4c18-bce4-0d0a089ca0d5"
     ],
     "filterType": "GMObject",
     "folderName": "Indoor Activities",

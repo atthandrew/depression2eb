@@ -1,17 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(energy == 0){
+if(bed == true){
 	switch(progress){
 		case 1:	
 			energy = 3;
 			day++;
 			progress++;
+			bed = false;
 			room_goto(rm_day1to2);
 		break;
 		
 		case 2:
 			day++;
 			progress++;
+			bed = false;
 			room_goto(rm_end);
 		break;
 		

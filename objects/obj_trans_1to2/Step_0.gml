@@ -4,14 +4,14 @@ event_inherited();
 
 if(myTextbox.page == 1){
 	awaitinput = true;
-	if(keyboard_check_pressed(ord("Y"))){
+	if(keyboard_check_pressed(ord("1"))){
 		awaitinput = false;
 		special_activity_effects();
 		instance_destroy(myTextbox);
 		room_goto(rm_house);
 	}
 	
-	if(keyboard_check_pressed(ord("N"))){
+	if(keyboard_check_pressed(ord("2"))){
 		awaitinput = false;
 		
 		instance_destroy(myTextbox);
