@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "339af1ea-d053-45b5-9b7a-fb7248f473c9",
+            "Value": {
+                "id": "002190ea-cc04-4e19-8acf-0b4b0e341fc4",
+                "resourcePath": "objects\/obj_outdoor\/obj_outdoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36491178-9883-4a3e-b54a-ca627060e2f2",
             "Value": {
                 "id": "392f876a-44c3-4b2a-9cee-f4b0af3649e4",
@@ -298,7 +306,7 @@
             "Key": "7393d519-0b8c-4686-a6f5-e311700d0650",
             "Value": {
                 "id": "9eb69f4e-48b4-4c77-92df-b20678aac40a",
-                "resourcePath": "sprites\\spr_acitivity_cook\\spr_acitivity_cook.yy",
+                "resourcePath": "sprites\/spr_acitivity_cook\/spr_acitivity_cook.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -314,8 +322,16 @@
             "Key": "86606aff-9f0c-4d96-bed8-a4a9626b3fa2",
             "Value": {
                 "id": "fe7a8a23-feb2-493a-b1a2-f6335de50b66",
-                "resourcePath": "sprites\\spr_activity_tv\\spr_activity_tv.yy",
+                "resourcePath": "sprites\/spr_activity_tv\/spr_activity_tv.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8720aeaf-c135-4042-bb75-f03e43af845d",
+            "Value": {
+                "id": "3bbde269-2a4c-4ddf-a603-506dd76885cf",
+                "resourcePath": "objects\/obj_outdoor_house\/obj_outdoor_house.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -324,6 +340,14 @@
                 "id": "9696bae8-a80a-4a23-8b4a-e684f359d33f",
                 "resourcePath": "notes\/README.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "8906187d-bef6-48b1-aa15-cfa7c2ed547e",
+            "Value": {
+                "id": "02fc7e57-49b8-4f5b-8dfd-273c28eddb42",
+                "resourcePath": "rooms\/rm_map\/rm_map.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -362,8 +386,16 @@
             "Key": "98f583e5-96e7-4fea-8a91-9d059785e038",
             "Value": {
                 "id": "a3c83a1a-e5e3-4de8-b1ac-0bdcb4ae3542",
-                "resourcePath": "sprites\\spr_activity_clean\\spr_activity_clean.yy",
+                "resourcePath": "sprites\/spr_activity_clean\/spr_activity_clean.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d4ec783-0c4c-4dba-b77e-e2536624c321",
+            "Value": {
+                "id": "8578523c-0717-4bdc-8d33-92d6cf7fde1c",
+                "resourcePath": "objects\/obj_activity_frontdoor\/obj_activity_frontdoor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -394,7 +426,7 @@
             "Key": "a620918c-450e-46f7-96f0-3fb543ace687",
             "Value": {
                 "id": "9a1b8000-2cea-4253-b8dd-3f9efa381df9",
-                "resourcePath": "objects\\obj_activity_tv\\obj_activity_tv.yy",
+                "resourcePath": "objects\/obj_activity_tv\/obj_activity_tv.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -426,7 +458,7 @@
             "Key": "ad8673cd-e3fb-4be2-94b6-5a24191ebfc1",
             "Value": {
                 "id": "ab7e4d02-5c67-4fd3-8519-1a0d06fea8dd",
-                "resourcePath": "objects\\obj_activity_cook\\obj_activity_cook.yy",
+                "resourcePath": "objects\/obj_activity_cook\/obj_activity_cook.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -471,6 +503,14 @@
             }
         },
         {
+            "Key": "c400f0bb-a1e6-4b2d-94cb-7aa59d0ada30",
+            "Value": {
+                "id": "7a50751b-3f45-4020-a9f1-1d8275b275d0",
+                "resourcePath": "sprites\/spr_map\/spr_map.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c9a24f41-7f10-45cc-a3d8-39939bc3866e",
             "Value": {
                 "id": "1a881191-c050-4ab0-a9b6-ead284b4dfd9",
@@ -483,6 +523,14 @@
             "Value": {
                 "id": "0452f9f7-7f78-4ca4-aac6-1f0af379fa25",
                 "resourcePath": "sprites\/spr_activity_computer\/spr_activity_computer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cbf72d99-929d-4883-b1e5-61397fe708b1",
+            "Value": {
+                "id": "5f0d8820-f3f1-43e0-99ce-ceba9bf81d93",
+                "resourcePath": "sprites\/spr_outdoor\/spr_outdoor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -538,7 +586,7 @@
             "Key": "d6c4d4d0-1815-4c18-bce4-0d0a089ca0d5",
             "Value": {
                 "id": "c860b9a9-c1df-47b4-8990-f76bb1e5d767",
-                "resourcePath": "objects\\obj_activity_clean\\obj_activity_clean.yy",
+                "resourcePath": "objects\/obj_activity_clean\/obj_activity_clean.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -554,7 +602,7 @@
             "Key": "d9510545-a8ad-4185-8b84-4559a32c0c3f",
             "Value": {
                 "id": "e57de0f8-5e9a-404b-915e-f5bfcdc0ec6c",
-                "resourcePath": "objects\/obj_activity_laundry\/obj_activity_laundry.yy",
+                "resourcePath": "objects\/obj_outdoor_laundry\/obj_outdoor_laundry.yy",
                 "resourceType": "GMObject"
             }
         },

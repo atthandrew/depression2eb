@@ -11,7 +11,9 @@ bed = false;
 //Three health stats to be balanced
 pHealth = 5;
 mHealth = 5;
-sHealth = 5; 
+sHealth = 5;
+
+returning_home = false;
 
 //Special Activity Day counters
 days_since_shower = 1;

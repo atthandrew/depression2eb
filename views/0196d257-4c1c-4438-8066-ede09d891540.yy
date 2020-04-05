@@ -8,7 +8,9 @@
         "d13364e2-d4a6-4909-bb06-ee3382941eee",
         "86606aff-9f0c-4d96-bed8-a4a9626b3fa2",
         "7393d519-0b8c-4686-a6f5-e311700d0650",
-        "98f583e5-96e7-4fea-8a91-9d059785e038"
+        "98f583e5-96e7-4fea-8a91-9d059785e038",
+        "c400f0bb-a1e6-4b2d-94cb-7aa59d0ada30",
+        "cbf72d99-929d-4883-b1e5-61397fe708b1"
     ],
     "filterType": "GMSprite",
     "folderName": "Placeholder Sprites",
