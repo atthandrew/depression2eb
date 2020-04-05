@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_day1to2",
+    "name": "rm_daytransition",
     "id": "89b6d85e-a6bd-4951-9908-d0fa6e26699e",
     "creationCodeFile": "",
     "inheritCode": false,

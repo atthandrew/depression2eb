@@ -2,7 +2,7 @@ event_inherited();
 
 //Handle user input from the textbox for certain pages
 
-if(myTextbox.page == 1){
+if(myTextbox.page == 0){
 	awaitinput = true;
 	if(keyboard_check_pressed(ord("1"))){
 		awaitinput = false;

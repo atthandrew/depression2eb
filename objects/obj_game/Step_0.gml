@@ -3,20 +3,49 @@
 if(bed == true){
 	switch(progress){
 		case 1:	
+			energy = 2;
+			day++;
+			progress++;
+			bed = false;
+			room_goto(rm_daytransition);
+		break;
+		
+		case 2:
 			energy = 3;
 			day++;
 			progress++;
 			bed = false;
-			room_goto(rm_day1to2);
+			room_goto(rm_daytransition);
 		break;
 		
-		case 2:
+		case 3:
+			energy = 3;
+			day++;
+			progress++;
+			mHealth--;
+			pHealth--;
+			sHealth--;
+			bed = false;
+			room_goto(rm_daytransition);
+		break;
+		
+		case 4:
+			energy = 1;
+			day++;
+			progress++;
+			mHealth--;
+			bed = false;
+			room_goto(rm_daytransition);
+		break;
+		
+		case 5:
+			energy = 3;
 			day++;
 			progress++;
 			bed = false;
-			room_goto(rm_end);
+			room_goto(rm_daytransition);
 		break;
-		
+			
 		default:
 		
 		break;

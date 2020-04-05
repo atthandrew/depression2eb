@@ -370,7 +370,7 @@
             "Key": "89b6d85e-a6bd-4951-9908-d0fa6e26699e",
             "Value": {
                 "id": "110bb08c-8231-4932-9775-1016f995ef80",
-                "resourcePath": "rooms\/rm_day1to2\/rm_day1to2.yy",
+                "resourcePath": "rooms\\rm_daytransition\\rm_daytransition.yy",
                 "resourceType": "GMRoom"
             }
         },

@@ -1,6 +1,5 @@
 event_inherited();
 
-myText[0] = "Shall I continue to the next day?";
-myText[1] = "Continue? (1 to accept, 2 to reject)";
+myText[0] = "Continue to the next day?\n 1 to accept\n 2 to reject";
 
 myName = "You";
