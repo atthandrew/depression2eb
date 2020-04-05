@@ -18,3 +18,4 @@ returning_home = false;
 //Special Activity Day counters
 days_since_shower = 1;
 days_since_work = 1;
+days_since_laundry = 1;

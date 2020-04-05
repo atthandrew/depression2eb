@@ -8,4 +8,3 @@ if (point_in_rectangle(mouse_x, mouse_y, x-sprite_width, y-sprite_height, x+spri
 		}
 	}
 }
-

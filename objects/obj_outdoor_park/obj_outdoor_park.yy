@@ -1,33 +1,33 @@
 {
-    "id": "9d4ec783-0c4c-4dba-b77e-e2536624c321",
+    "id": "5647f878-5d2c-44ef-ae19-2eac7080affe",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_activity_frontdoor",
+    "name": "obj_outdoor_park",
     "eventList": [
         {
-            "id": "4ebb21fe-33a4-4c3c-a33e-ab09c243e7b1",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "9d4ec783-0c4c-4dba-b77e-e2536624c321"
-        },
-        {
-            "id": "69985332-b218-4d50-af6d-e3f992e65dac",
+            "id": "5e21df6a-a429-43e2-8809-50ceacff53da",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "9d4ec783-0c4c-4dba-b77e-e2536624c321"
+            "m_owner": "5647f878-5d2c-44ef-ae19-2eac7080affe"
+        },
+        {
+            "id": "55e1d9d6-91b9-43f6-8c82-dcb7a6719798",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "5647f878-5d2c-44ef-ae19-2eac7080affe"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "1c3104e5-8607-46f1-ad61-ded8c073321f",
+    "parentObjectId": "339af1ea-d053-45b5-9b7a-fb7248f473c9",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "4bf51d6f-bd1c-488b-8cc8-833c21b5733a",
+    "spriteId": "cbf72d99-929d-4883-b1e5-61397fe708b1",
     "visible": true
 }

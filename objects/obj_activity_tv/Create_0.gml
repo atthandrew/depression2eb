@@ -3,7 +3,7 @@ awaitinput = false;
 
 myText[0] = "Watch some shows or listen to some music and dance?\n 1 for shows (E-1 M+ P- S+)\n 2 for music (E-1 M+ P+ S-)\n 3 to reject";
 
-myName = "Keyboard";
+myName = "Entertainment System";
 
 daysWatched = 0;
 showComplete = 0;

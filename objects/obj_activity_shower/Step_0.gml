@@ -24,7 +24,7 @@ if(myTextbox != noone){
 					}
 					//Record that you've taken a shower
 					obj_game.days_since_shower = 0;
-					newText[0] = "I already took a shower today."
+					newText[0] = "You already took a shower today."
 					myText = newText;
 					myName = "You";
 					
@@ -41,7 +41,14 @@ if(myTextbox != noone){
 	
 			if(keyboard_check_pressed(ord("2")))
 			{
-				myText[1] = "It hasn't been that long since you showered, has it?";
+				if (obj_game.days_since_shower > 2)
+				{
+					myText[1] = "It hasn't been that long since you showered, has it?";
+				}
+				else
+				{
+					myText[1] = "You don't feel too dirty yet.";
+				}
 				advance_textbox_page(myTextbox, self);
 				awaitinput = false;
 			}

@@ -1,7 +1,13 @@
 myTextbox = noone;
 awaitinput = false;
 
-myText[0] = "Do your laundry";
-myText[1] = "Perform Activity? (1 to accept, 2 to reject)";
-
-myName = "Laundry";
+if(obj_game.days_since_laundry > 1 || (obj_game.progress == 1 && obj_game.days_since_laundry != 0))
+{
+	myText[0] = "Do your laundry?\n 1 to accept (E-1 M+ P- S+)\n 2 to reject";
+	myName = "Laundry";
+}
+else
+{
+	myText[0] = "You already did your laundry recently.";
+	myName = "You";
+}

@@ -8,7 +8,14 @@ if(myTextbox != noone){
 		{
 			if(obj_game.energy > 0)
 			{
-				room_goto(rm_map);
+				obj_game.energy--;
+				obj_game.mHealth--;
+				obj_game.pHealth++;
+				obj_game.sHealth++;
+			
+				myText[1] = "You go for a nice walk and get some fresh air.";
+				advance_textbox_page(myTextbox, self);
+				awaitinput = false;
 			}
 			else
 			{
@@ -20,7 +27,7 @@ if(myTextbox != noone){
 	
 		if(keyboard_check_pressed(ord("2")))
 		{
-			myText[1] = "Maybe I'll stay in today.";
+			myText[1] = "You decide the park looks too busy and decide to go somewhere else.";
 			advance_textbox_page(myTextbox, self);
 			awaitinput = false;
 		}

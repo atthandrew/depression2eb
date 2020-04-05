@@ -12,7 +12,7 @@ if(obj_game.returning_home){
 else{
 	switch(obj_game.progress){
 		case 1: //Day 1: Tutorial
-			myText[0] = "Controls: Movement = wasd/arrow keys, Interact = Space, Pause = P";
+			myText[0] = "Controls: Movement = wasd/arrow keys, Interact = Space, Pause = Esc/P";
 			myText[1] = "Perform activities to alter your mental, phsycial, and social health stats.";
 			myText[2] = "Each activity costs a certain amount of energy.";
 			myText[3] = "Some activities can have bonus effects if done enough.";
