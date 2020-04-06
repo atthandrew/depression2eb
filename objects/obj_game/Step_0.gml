@@ -6,6 +6,7 @@ if(bed == true){
 			energy = 2;
 			day++;
 			progress++;
+			warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -14,6 +15,7 @@ if(bed == true){
 			energy = 3;
 			day++;
 			progress++;
+			warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -25,6 +27,7 @@ if(bed == true){
 			mHealth--;
 			pHealth--;
 			sHealth--;
+			warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -34,6 +37,7 @@ if(bed == true){
 			day++;
 			progress++;
 			mHealth--;
+			warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -42,6 +46,7 @@ if(bed == true){
 			energy = 3;
 			day++;
 			progress++;
+			warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;

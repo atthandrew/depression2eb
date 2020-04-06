@@ -2,6 +2,7 @@
 
 if(!obj_game.paused){
 	if(distance_to_object(obj_player) < 5){
+		image_index = 0;
 		if(keyboard_check_pressed(vk_space)){
 			if(myTextbox == noone){
 				myTextbox = instance_create_layer(x, y, "Text", obj_textbox);
@@ -12,6 +13,7 @@ if(!obj_game.paused){
 		}
 	}
 	else{
+		image_index = 1;
 		if(myTextbox != noone){
 			instance_destroy(myTextbox);
 			myTextbox = noone;
@@ -19,5 +21,4 @@ if(!obj_game.paused){
 		}
 	}
 }
-
 //Handle user input from the textbox for certain pages

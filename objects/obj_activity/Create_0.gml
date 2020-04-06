@@ -5,3 +5,5 @@ awaitinput = false;
 
 myText[0] = "";
 myName = "";
+
+is_warning = false;

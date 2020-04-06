@@ -3,12 +3,11 @@
 draw_set_font(ft_textbox);
 draw_set_color(c_white);
 
-draw_text(20, 20, "day = " + string(day));
-draw_text(20, 40, "progress = " + string(progress));
-//draw_text(20, 100, "days since shower = " + string(days_since_shower));
-
-if(instance_exists(obj_player)){
+if(paused){
+	draw_text(20, 20, "day = " + string(day));
+	draw_text(20, 40, "progress = " + string(progress));
 	draw_text(20, 60, "energy = " + string(energy));
-	draw_text(20, 80, "stats(m,p,s) = (" + string(mHealth) + "," + 
-		string(pHealth) + "," + string(sHealth) + ")");
+	draw_text(20, 80, "Mental Health = " + string(mHealth));
+	draw_text(20, 100, "Physical Health = " + string(pHealth));
+	draw_text(20, 120, "Social Health = " + string(sHealth));
 }

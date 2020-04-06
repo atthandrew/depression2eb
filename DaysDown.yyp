@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "02c9900b-280a-4b82-83d3-75b450a3e2eb",
-            "Value": {
-                "id": "6247eafa-1a3a-455a-bb6c-da05490d6c09",
-                "resourcePath": "sprites\\sprite15\\sprite15.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0b446394-914b-472a-a3cf-87426c2a8eb7",
             "Value": {
                 "id": "a9fbf6d2-bcfc-4607-94db-fd1fa9911676",
@@ -114,7 +106,7 @@
             "Key": "21ea8176-7ccb-46a2-a1d0-91a93ec2cc71",
             "Value": {
                 "id": "8c06080d-6ef1-4b12-99b2-2da64cf2ab24",
-                "resourcePath": "sprites\\spr_activity_leave\\spr_activity_leave.yy",
+                "resourcePath": "sprites\/spr_activity_leave\/spr_activity_leave.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -258,7 +250,7 @@
             "Key": "5647f878-5d2c-44ef-ae19-2eac7080affe",
             "Value": {
                 "id": "b3f82c11-9277-47c8-9ebc-e8dfcb3836e0",
-                "resourcePath": "objects\\obj_outdoor_park\\obj_outdoor_park.yy",
+                "resourcePath": "objects\/obj_outdoor_park\/obj_outdoor_park.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -300,6 +292,14 @@
                 "id": "0fbb873a-9703-4cce-b94b-ea471f6f9e49",
                 "resourcePath": "views\/63a78d4a-5d38-4880-93d4-fe95be8b79f4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "653f123f-9477-48cc-ba3b-e3c5ef78130c",
+            "Value": {
+                "id": "fdc1e3af-2674-4104-babe-ac2699930092",
+                "resourcePath": "fonts\/ft_title\/ft_title.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -378,7 +378,7 @@
             "Key": "89b6d85e-a6bd-4951-9908-d0fa6e26699e",
             "Value": {
                 "id": "110bb08c-8231-4932-9775-1016f995ef80",
-                "resourcePath": "rooms\\rm_daytransition\\rm_daytransition.yy",
+                "resourcePath": "rooms\/rm_daytransition\/rm_daytransition.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -418,7 +418,7 @@
             "Key": "9d4ec783-0c4c-4dba-b77e-e2536624c321",
             "Value": {
                 "id": "8578523c-0717-4bdc-8d33-92d6cf7fde1c",
-                "resourcePath": "objects\\obj_activity_leave\\obj_activity_leave.yy",
+                "resourcePath": "objects\/obj_activity_leave\/obj_activity_leave.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -530,7 +530,7 @@
             "Key": "bf920d92-48f8-4f24-8dea-27a19a4b20f4",
             "Value": {
                 "id": "ce91a455-122c-4260-8032-9ce1136af220",
-                "resourcePath": "objects\\obj_outdoor_theatre\\obj_outdoor_theatre.yy",
+                "resourcePath": "objects\/obj_outdoor_theatre\/obj_outdoor_theatre.yy",
                 "resourceType": "GMObject"
             }
         },

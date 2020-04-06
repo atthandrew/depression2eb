@@ -4,6 +4,9 @@ hoverValue = 0;
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 
+titleX = gui_width/2;
+titleY = gui_height/2 - 180;
+
 //Main menu buttons
 var buttonPlay = instance_create_depth(gui_width/2, gui_height/2, -4096, obj_button);
 buttonPlay.BUTTON_TYPE = 1;

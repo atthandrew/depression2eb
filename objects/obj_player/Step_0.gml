@@ -24,6 +24,20 @@ if(!obj_game.paused){
 		moveY = 0;
 	}
 
+//Change sprite frame based on direction
+if(moveY < 0){
+	image_index = 2;
+}
+else{
+	image_index = 0;
+}
+if(moveX > 0){
+	image_index = 1;
+}
+if(moveX < 0){
+	image_index = 3;	
+}
+
 	x += moveX;
 	y += moveY;
 }

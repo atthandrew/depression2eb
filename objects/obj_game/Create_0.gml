@@ -13,7 +13,11 @@ pHealth = 5;
 mHealth = 5;
 sHealth = 5;
 
+//Detects if returning to rm_house from the map
 returning_home = false;
+
+//Tracks if out of energy warning has been given
+warning_given = false;
 
 //Special Activity Day counters
 days_since_shower = 1;

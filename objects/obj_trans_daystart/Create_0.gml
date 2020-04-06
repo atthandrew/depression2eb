@@ -4,11 +4,6 @@ obj_game.paused = true;
 
 textPos = 0;
 
-if (obj_game.energy == 0)
-{
-	myText[0] = "You're out of energy for the day. You can plan ahead or go to bed for the day.";
-}
-
 if(obj_game.returning_home){
 	//TODO: update x and y of player to coordinates in front of door
 	

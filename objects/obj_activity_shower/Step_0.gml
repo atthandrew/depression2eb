@@ -3,7 +3,7 @@ event_inherited();
 
 if(myTextbox != noone){
 	if(obj_game.days_since_shower != 0){
-		if(myTextbox.page == 0 && obj_game.days_since_shower > 0){
+		if(myTextbox.page == 0 && obj_game.days_since_shower > 0 && !is_warning){
 			awaitinput = true;
 			if(keyboard_check_pressed(ord("1")))
 			{

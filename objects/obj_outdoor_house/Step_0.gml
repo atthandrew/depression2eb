@@ -2,7 +2,7 @@
 event_inherited();
 
 if(myTextbox != noone){
-	if(myTextbox.page == 0){
+	if(myTextbox.page == 0 && !is_warning){
 		awaitinput = true;
 		if(keyboard_check_pressed(ord("1"))){
 			stay_on_map = false;
