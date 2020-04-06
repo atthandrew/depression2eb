@@ -6,51 +6,70 @@ if(myTextbox != noone){
 		awaitinput = true;
 		if(keyboard_check_pressed(ord("1")))
 		{
-			if(obj_game.energy > 0)
+			if(obj_game.progress == 8)
 			{
-				obj_game.energy--; 
-				obj_game.mHealth++;
-				obj_game.pHealth--; 
-				obj_game.sHealth++;
-				daysRead++;
-			
-				if (daysRead == readComplete)
+				myText[1] = "The weight grows heavy and you long to return to your room.";
+				
+				myName = "You";
+				advance_textbox_page(myTextbox, self);
+				awaitinput = false;
+				if(obj_game.energy > 0)
 				{
-					bookQuality = irandom_range(1, 5);
-					if (bookQuality < 5)
+					obj_game.energy--; 
+					obj_game.mHealth++;
+					obj_game.pHealth--; 
+					obj_game.sHealth++;
+					daysRead++;
+			
+					if (daysRead == readComplete)
 					{
-						myText[1] = "You finsihed a pretty good book.";
+						bookQuality = irandom_range(1, 5);
+						if (bookQuality < 5)
+						{
+							myText[1] = "You finsihed a pretty good book.";
+						}
+						else
+						{
+							myText[1] = "You finished an amazing book! (M+)";
+							obj_game.mHealth++;
+						}
+						advance_textbox_page(myTextbox, self);
+						awaitinput = false;
+						readComplete = 0;
+						daysRead = 0;
 					}
 					else
 					{
-						myText[1] = "You finished an amazing book! (M+)";
-						obj_game.mHealth++;
+						myText[1] = "You finished a few chapters.";
+						advance_textbox_page(myTextbox, self);
+						awaitinput = false;
 					}
-					advance_textbox_page(myTextbox, self);
-					awaitinput = false;
-					readComplete = 0;
-					daysRead = 0;
 				}
 				else
 				{
-					myText[1] = "You finished a few chapters.";
+					myText[1] = "You don't have enough energy for this activity";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}
-			}
-			else
-			{
-				myText[1] = "You don't have enough energy for this activity";
-				advance_textbox_page(myTextbox, self);
-				awaitinput = false;
 			}
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
 		{
-			myText[1] = "You can feel yourself falling asleep already and decide against it.";
-			advance_textbox_page(myTextbox, self);
-			awaitinput = false;
+			if (obj_game.progress == 8)
+			{
+				myText[1] = "The weight grows heavy and you long to return to your room.";
+				
+				myName = "You";
+				advance_textbox_page(myTextbox, self);
+				awaitinput = false;
+			}
+			else
+			{
+				myText[1] = "You can feel yourself falling asleep already and decide against it.";
+				advance_textbox_page(myTextbox, self);
+				awaitinput = false;
+			}
 		}
 	}
 }

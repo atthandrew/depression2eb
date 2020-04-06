@@ -2,9 +2,9 @@ event_inherited();
 
 //Handle user input from the textbox for certain pages
 
-if(myTextbox.page == 1){
+if(myTextbox.page == 0){
 	awaitinput = true;
-	if(keyboard_check_pressed(ord("Y"))){
+	if(keyboard_check_pressed(ord("1"))){
 		awaitinput = false;
 		
 		instance_destroy(myTextbox);
@@ -14,7 +14,7 @@ if(myTextbox.page == 1){
 		room_goto(rm_house);
 	}
 	
-	if(keyboard_check_pressed(ord("N"))){
+	if(keyboard_check_pressed(ord("2"))){
 		awaitinput = false;
 		
 		instance_destroy(myTextbox);
