@@ -26,33 +26,17 @@ if(!obj_game.paused){
 
 //Works but can't look at an object when pressed up against it.
 //Change sprite frame based on direction
-//if(moveY < 0){
-//	image_index = 2;
-//}
-//if(moveY > 0){       //Originally else
-//	image_index = 0;
-//}
-//if(moveX > 0){
-//	image_index = 1;
-//}
-//if(moveX < 0){
-//	image_index = 3;	
-//}
-if(input_down)
-{
-	image_index = 0;
-}
-if(input_right)
-{
-	image_index = 1;
-}
-if(input_up)
-{
+if(moveY < 0){
 	image_index = 2;
 }
-if(input_left)
-{
-	image_index = 3;
+if(moveY > 0){       //Originally else
+	image_index = 0;
+}
+if(moveX > 0){
+	image_index = 1;
+}
+if(moveX < 0){
+	image_index = 3;	
 }
 
 	x += moveX;

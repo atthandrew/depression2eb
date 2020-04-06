@@ -6,7 +6,7 @@ if(bed){
 			energy = 2;
 			day++;
 			progress++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -15,7 +15,7 @@ if(bed){
 			energy = 3;
 			day++;
 			progress++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -27,7 +27,7 @@ if(bed){
 			mHealth--;
 			pHealth--;
 			sHealth--;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -37,7 +37,7 @@ if(bed){
 			day++;
 			progress++;
 			mHealth--;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -47,7 +47,7 @@ if(bed){
 			day++;
 			progress++;
 			pHealth++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -58,7 +58,7 @@ if(bed){
 			progress++;
 			mHealth = mHealth - 2;
 			sHealth--;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -70,7 +70,7 @@ if(bed){
 			mHealth = mHealth - 2;
 			pHealth = pHealth - 2;
 			sHealth = sHealth - 2;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -79,7 +79,7 @@ if(bed){
 			energy = 2;
 			day++;
 			progress++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -89,7 +89,7 @@ if(bed){
 			day++;
 			progress++;
 			sHealth++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -101,7 +101,7 @@ if(bed){
 			mHealth++;
 			pHealth++;
 			sHealth++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -110,7 +110,7 @@ if(bed){
 			energy = 3;
 			day++;
 			progress++;
-			warning_given = false;
+			//warning_given = false;
 			bed = false;
 			room_goto(rm_daytransition);
 		break;
@@ -128,7 +128,7 @@ if(mHealth <= 0 || pHealth <= 0 || sHealth <= 0){
 	mHealth = 5;
 	pHealth = 5;
 	sHealth = 5;
-	//room_goto(rm_gameover);
+	room_goto(rm_gameover);
 }
 
 if(mHealth > 10)
