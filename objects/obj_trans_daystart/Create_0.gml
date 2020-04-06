@@ -3,6 +3,7 @@ event_inherited();
 obj_game.paused = true;
 
 textPos = 0;
+//day4stats = false;
 
 if(obj_game.returning_home){
 	//TODO: update x and y of player to coordinates in front of door
