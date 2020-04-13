@@ -3,6 +3,7 @@ myTextbox = argument0;
 textboxCreator = argument1;
 
 if(myTextbox.page + 1 < array_length_1d(myTextbox.text)){
+	myTextbox.charCount = 0;
 	myTextbox.page++;
 }
 //else we've seen all pages; destroy the textbox

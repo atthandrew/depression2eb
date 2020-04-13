@@ -14,6 +14,8 @@ if(myTextbox != noone){
 				obj_game.sHealth++;
 			
 				myText[1] = "You go for a nice walk and get some fresh air.";
+				myTextbox.greenText = "S+ P+ ";
+				myTextbox.redText = "E- M-";
 				advance_textbox_page(myTextbox, self);
 				awaitinput = false;
 			}

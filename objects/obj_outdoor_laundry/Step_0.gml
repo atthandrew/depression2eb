@@ -22,10 +22,14 @@ if(myTextbox != noone)
 					if (obj_game.days_since_laundry > 5)
 					{
 						myText[1] = "Your clothes smell much better now.";
+						myTextbox.greenText = "S+ M+ ";
+						myTextbox.redText = "E- P-";
 					}
 					else
 					{
 						myText[1] = "Your fresh clothes warm your skin.";
+						myTextbox.greenText = "S+ M+ ";
+						myTextbox.redText = "E- P-";
 					}
 			
 					obj_game.days_since_laundry = 0;

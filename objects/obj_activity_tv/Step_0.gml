@@ -32,10 +32,14 @@ if(myTextbox != noone){
 							if (movieQuality < 5)
 							{
 								myText[1] = "You watched a pretty great movie.";
+								myTextbox.greenText = "S+ M+ ";
+								myTextbox.redText = "E- P-";
 							}
 							else
 							{
 								myText[1] = "You watched one of the greatest movies you've ever seen! (M+)";
+								myTextbox.greenText = "S+ M++ ";
+								myTextbox.redText = "E- P-";
 								obj_game.mHealth++;
 							}
 						}
@@ -45,10 +49,14 @@ if(myTextbox != noone){
 							if (showQuality < 5)
 							{
 								myText[1] = "You finshed a pretty great series.";
+								myTextbox.greenText = "S+ M+ ";
+								myTextbox.redText = "E- P-";
 							}
 							else
 							{
 								myText[1] = "You finished one of your new favorite series! (M+)"
+								myTextbox.greenText = "S+ M++ ";
+								myTextbox.redText = "E- P-";
 								obj_game.mHealth++;
 							}
 						}
@@ -60,6 +68,8 @@ if(myTextbox != noone){
 					else
 					{
 						myText[1] = "You watched a few episodes in the series.";
+						myTextbox.greenText = "S+ M+ ";
+						myTextbox.redText = "E- P-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
 					}
@@ -100,6 +110,8 @@ if(myTextbox != noone){
 						if (songDance == 1)
 						{
 							myText[1] = "You discovered a great new artist!";
+							myTextbox.greenText = "P+ M+ ";
+							myTextbox.redText = "E- S-";
 						}
 						else
 						{
@@ -107,12 +119,16 @@ if(myTextbox != noone){
 							if (danceBonus == 3)
 							{
 								myText[1] = "You've really improved your dancing and showed off a video to some friends! (S+)";
+								myTextbox.greenText = "P+ M+ S+";
+								myTextbox.redText = "E-";
 								obj_game.sHealth++;
 								danceBonus = 0;
 							}
 							else
 							{
 								myText[1] = "You've gotten a little better at dancing.";
+								myTextbox.greenText = "P+ M+ ";
+								myTextbox.redText = "E- S-";
 							}
 						}
 						advance_textbox_page(myTextbox, self);
@@ -122,7 +138,9 @@ if(myTextbox != noone){
 					}
 					else
 					{
-						myText[1] = "You danced to some great music.";					
+						myText[1] = "You danced to some great music.";
+						myTextbox.greenText = "P+ M+ ";
+						myTextbox.redText = "E- S-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
 					}

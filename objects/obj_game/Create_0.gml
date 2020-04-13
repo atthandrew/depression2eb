@@ -23,3 +23,7 @@ warning_given = false;
 days_since_shower = 1;
 days_since_work = 1;
 days_since_laundry = 1;
+
+//Used for drawing UI
+bar_width = 5;
+bar_spacing = bar_width * 2;

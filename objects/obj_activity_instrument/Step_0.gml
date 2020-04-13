@@ -18,6 +18,8 @@ if(myTextbox != noone){
 				{
 					myText[1] = "You mastered a new song! (P+)";
 					obj_game.pHealth++;
+					myTextbox.greenText = "M+ P++ ";
+					myTextbox.redText = "E- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 					practiceComplete = 0;
@@ -26,6 +28,8 @@ if(myTextbox != noone){
 				else
 				{
 					myText[1] = "You practiced your songs."
+					myTextbox.greenText = "M+ P+ ";
+					myTextbox.redText = "E- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}

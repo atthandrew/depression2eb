@@ -26,11 +26,15 @@ if(myTextbox != noone){
 						bookQuality = irandom_range(1, 5);
 						if (bookQuality < 5)
 						{
-							myText[1] = "You finsihed a pretty good book.";
+							myText[1] = "You finished a pretty good book.";
+							myTextbox.greenText = "S+ M+ ";
+							myTextbox.redText = "E- P-";
 						}
 						else
 						{
 							myText[1] = "You finished an amazing book! (M+)";
+							myTextbox.greenText = "S+ M++ ";
+							myTextbox.redText = "E- P-";
 							obj_game.mHealth++;
 						}
 						advance_textbox_page(myTextbox, self);
@@ -41,6 +45,8 @@ if(myTextbox != noone){
 					else
 					{
 						myText[1] = "You finished a few chapters.";
+						myTextbox.greenText = "S+ M+ ";
+						myTextbox.redText = "E- P-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
 					}

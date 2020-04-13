@@ -18,6 +18,8 @@ if(myTextbox != noone){
 				{
 					myText[1] = "You and your friends finished the game! Time to find a new one. (S+)";
 					obj_game.sHealth++;
+					myTextbox.greenText = "M+ S++ ";
+					myTextbox.redText = "E- P-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 					gameComplete = 0;
@@ -26,6 +28,8 @@ if(myTextbox != noone){
 				else
 				{
 					myText[1] = "You and your friends played games online.";
+					myTextbox.greenText = "M+ S+ ";
+					myTextbox.redText = "E- P-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}
@@ -53,6 +57,8 @@ if(myTextbox != noone){
 				{
 					myText[1] = "You finished your project and got a bonus! (P+)";
 					obj_game.pHealth++;
+					myTextbox.greenText = "M+ P++ ";
+					myTextbox.redText = "E-- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 					workComplete = 0;
@@ -61,6 +67,8 @@ if(myTextbox != noone){
 				else
 				{
 					myText[1] = "You worked on your project.";
+					myTextbox.greenText = "M+ P+ ";
+					myTextbox.redText = "E-- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}
