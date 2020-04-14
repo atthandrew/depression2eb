@@ -2,7 +2,7 @@
 event_inherited();
 
 if(myTextbox != noone){
-	if(myTextbox.page == 0){
+	if(myTextbox.page == 0 && !is_warning){
 		awaitinput = true;
 		if(keyboard_check_pressed(ord("1")))
 		{
@@ -15,8 +15,8 @@ if(myTextbox != noone){
 				audio_play_sound(snd_outdoor_park, 100, false);
 			
 				myText[1] = "You go for a nice walk and get some fresh air.";
-				myTextbox.greenText = "S+ P+ ";
-				myTextbox.redText = "E- M-";
+				myTextbox.greenText[1] = "S+ P+ ";
+				myTextbox.redText[1] = "E- M-";
 				advance_textbox_page(myTextbox, self);
 				awaitinput = false;
 			}

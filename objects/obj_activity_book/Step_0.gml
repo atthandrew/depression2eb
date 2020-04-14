@@ -31,14 +31,14 @@ if(myTextbox != noone){
 						if (bookQuality < 5)
 						{
 							myText[1] = "You finished a pretty good book.";
-							myTextbox.greenText = "S+ M+ ";
-							myTextbox.redText = "E- P-";
+							myTextbox.greenText[1] = "S+ M+ ";
+							myTextbox.redText[1] = "E- P-";
 						}
 						else
 						{
 							myText[1] = "You finished an amazing book! (M+)";
-							myTextbox.greenText = "S+ M++ ";
-							myTextbox.redText = "E- P-";
+							myTextbox.greenText[1] = "S+ M++ ";
+							myTextbox.redText[1] = "E- P-";
 							obj_game.mHealth++;
 						}
 						advance_textbox_page(myTextbox, self);
@@ -49,8 +49,8 @@ if(myTextbox != noone){
 					else
 					{
 						myText[1] = "You finished a few chapters.";
-						myTextbox.greenText = "S+ M+ ";
-						myTextbox.redText = "E- P-";
+						myTextbox.greenText[1] = "S+ M+ ";
+						myTextbox.redText[1] = "E- P-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
 					}

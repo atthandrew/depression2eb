@@ -10,10 +10,15 @@ draw_text(boxX + boxWidth/2, boxY + yBuffer, name);
 draw_set_halign(fa_left);
 
 //draw green and red text in top left of box
-draw_set_color(c_lime);
-draw_text(boxX + xBuffer, boxY + yBuffer, greenText);
-draw_set_color(c_red);
-draw_text(boxX + xBuffer + string_width(greenText), boxY + yBuffer, redText);
+//if the array contains something, and current page isn't the default "0" for uninitialized arrays
+if(page < array_length_1d(greenText) && greenText[page] != "0"){ 
+	draw_set_color(c_lime);
+	draw_text(boxX + xBuffer, boxY + yBuffer, greenText[page]);
+}
+if(page < array_length_1d(redText) && redText[page] != "0"){
+	draw_set_color(c_red);
+	draw_text(boxX + xBuffer + string_width(greenText[page]), boxY + yBuffer, redText[page]);
+}
 draw_set_color(c_white);
 
 //draw textbox text

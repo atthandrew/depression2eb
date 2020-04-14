@@ -1,6 +1,7 @@
 event_inherited();
 
 //Handle user input from the textbox for certain pages
+myTextbox.name = "You";
 
 if (obj_game.progress == 3)
 {

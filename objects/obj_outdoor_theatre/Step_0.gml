@@ -16,8 +16,8 @@ if(myTextbox != noone){
 				if (filmQuality == 10)
 				{
 					myText[1] = "You watched an instant classic! (M+)";
-					myTextbox.greenText = "M++ S+ ";
-					myTextbox.redText = "E- P-";
+					myTextbox.greenText[1] = "M++ S+ ";
+					myTextbox.redText[1] = "E- P-";
 					obj_game.mHealth++;
 					filmQuality = 0;
 					advance_textbox_page(myTextbox, self);
@@ -26,8 +26,8 @@ if(myTextbox != noone){
 				else
 				{
 					myText[1] = "You had a great time at the movies.";
-					myTextbox.greenText = "M+ S+ ";
-					myTextbox.redText = "E- P-";
+					myTextbox.greenText[1] = "M+ S+ ";
+					myTextbox.redText[1] = "E- P-";
 					filmQuality = 0;
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
@@ -53,8 +53,8 @@ if(myTextbox != noone){
 				if (filmQuality == 10)
 				{
 					myText[1] = "You and your friends loved it! (M+)";
-					myTextbox.greenText = "M++ S++ ";
-					myTextbox.redText = "E-- P-";
+					myTextbox.greenText[1] = "M++ S++ ";
+					myTextbox.redText[1] = "E-- P-";
 					obj_game.mHealth++;
 					filmQuality = 0;
 					advance_textbox_page(myTextbox, self);
@@ -63,8 +63,8 @@ if(myTextbox != noone){
 				else
 				{
 					myText[1] = "You and your friends had fun at the movies.";
-					myTextbox.greenText = "M+ S++ ";
-					myTextbox.redText = "E-- P-";
+					myTextbox.greenText[1] = "M+ S++ ";
+					myTextbox.redText[1] = "E-- P-";
 					filmQuality = 0;
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;

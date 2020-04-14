@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1bf866a7-c9f0-4434-b4f8-5181ef08e427",
+            "Value": {
+                "id": "f8c75aac-1ba4-4b97-9011-ae0c303ff6fd",
+                "resourcePath": "sounds\/snd_pause\/snd_pause.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1c3104e5-8607-46f1-ad61-ded8c073321f",
             "Value": {
                 "id": "b63404b4-6863-4d6f-a703-4b46132bf3c0",
@@ -106,7 +114,7 @@
             "Key": "2008b47c-6b62-45ec-99b7-7099a9ffd15b",
             "Value": {
                 "id": "25711405-09c7-46ed-be8d-23d9e0abcfbc",
-                "resourcePath": "views\\2008b47c-6b62-45ec-99b7-7099a9ffd15b.yy",
+                "resourcePath": "views\/2008b47c-6b62-45ec-99b7-7099a9ffd15b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -114,7 +122,7 @@
             "Key": "2060f678-8210-48b7-a75e-f6714a663356",
             "Value": {
                 "id": "81ed1442-ea56-4f60-bfd4-ac8ab456f37d",
-                "resourcePath": "sounds\\snd_activity_tv\\snd_activity_tv.yy",
+                "resourcePath": "sounds\/snd_activity_tv\/snd_activity_tv.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -162,7 +170,7 @@
             "Key": "28c919db-2e20-4447-8c6c-efc729189d7d",
             "Value": {
                 "id": "04600b07-7edd-46dd-a339-93a6de4c8e40",
-                "resourcePath": "objects\\obj_trans_daychange\\obj_trans_daychange.yy",
+                "resourcePath": "objects\/obj_trans_daychange\/obj_trans_daychange.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -188,6 +196,14 @@
                 "id": "002190ea-cc04-4e19-8acf-0b4b0e341fc4",
                 "resourcePath": "objects\/obj_outdoor\/obj_outdoor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "355e86b5-0b1e-4357-a924-8506db431121",
+            "Value": {
+                "id": "4522f3b3-c377-4442-bcb0-8bccfd718b98",
+                "resourcePath": "sounds\/snd_activity_game\/snd_activity_game.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "518bc555-0ebf-4c65-be92-b7bb4bbcdb84",
+            "Value": {
+                "id": "c36aed8a-c888-4861-8831-485eeee2dd66",
+                "resourcePath": "sounds\/snd_stat_up\/snd_stat_up.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5214668f-7057-40c4-af5d-71efdb978ba4",
             "Value": {
                 "id": "d7618d92-e007-41c9-b4b9-3b7bfdba8573",
@@ -274,7 +298,7 @@
             "Key": "597188b0-d3c3-4d01-90c7-ec937383fa1d",
             "Value": {
                 "id": "9c57ae2f-c54c-461c-8854-4e37a3559de5",
-                "resourcePath": "sounds\\snd_activity_book\\snd_activity_book.yy",
+                "resourcePath": "sounds\/snd_activity_book\/snd_activity_book.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -322,7 +346,7 @@
             "Key": "641bd9d0-63c2-4a95-9661-563b0d0bea16",
             "Value": {
                 "id": "28504a6d-c88a-4172-8138-c07b31552621",
-                "resourcePath": "sounds\\snd_activity_shower\\snd_activity_shower.yy",
+                "resourcePath": "sounds\/snd_activity_shower\/snd_activity_shower.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -378,7 +402,7 @@
             "Key": "76b2eb65-5ea5-4f7c-a193-8b498c484bcc",
             "Value": {
                 "id": "398277b6-98ba-47ea-af9f-501025fae58b",
-                "resourcePath": "sounds\\snd_outdoor_park\\snd_outdoor_park.yy",
+                "resourcePath": "sounds\/snd_outdoor_park\/snd_outdoor_park.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -386,7 +410,7 @@
             "Key": "79249514-f42c-40a9-bc46-1c1c5da6feb2",
             "Value": {
                 "id": "16a450eb-43c9-4026-a5a3-874552ef995d",
-                "resourcePath": "sprites\\spr_cinema\\spr_cinema.yy",
+                "resourcePath": "sprites\/spr_cinema\/spr_cinema.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -394,7 +418,7 @@
             "Key": "7d7f7333-7aa7-4e06-8e1d-67b9777fed82",
             "Value": {
                 "id": "6ddab3e5-a25b-4e71-9c36-bd642f3c040e",
-                "resourcePath": "sounds\\snd_activity_computerWork\\snd_activity_computerWork.yy",
+                "resourcePath": "sounds\/snd_activity_computerWork\/snd_activity_computerWork.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -402,7 +426,7 @@
             "Key": "7eea5644-b4f7-4cf7-8173-4363654579c3",
             "Value": {
                 "id": "8f0c1f06-17c7-404d-b8f4-2e63ba751d2b",
-                "resourcePath": "sprites\\spr_house\\spr_house.yy",
+                "resourcePath": "sprites\/spr_house\/spr_house.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -458,7 +482,7 @@
             "Key": "8e3a579e-16cb-415e-aafc-1066852ea2ac",
             "Value": {
                 "id": "46dd8932-68a5-48c6-8809-bc15ea2625e8",
-                "resourcePath": "sounds\\snd_outdoor_home\\snd_outdoor_home.yy",
+                "resourcePath": "sounds\/snd_outdoor_home\/snd_outdoor_home.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -466,7 +490,7 @@
             "Key": "908c2bfa-e25b-4f49-9714-d1191b821188",
             "Value": {
                 "id": "9eaa9184-8ff4-40e9-a149-825ae487ecd6",
-                "resourcePath": "sounds\\snd_activity_leave\\snd_activity_leave.yy",
+                "resourcePath": "sounds\/snd_activity_leave\/snd_activity_leave.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -522,7 +546,7 @@
             "Key": "a2b8d5b5-6284-45dc-8e80-f0997220217b",
             "Value": {
                 "id": "8bca9fe2-d064-471f-975b-306220767e64",
-                "resourcePath": "sprites\\spr_laundromat\\spr_laundromat.yy",
+                "resourcePath": "sprites\/spr_laundromat\/spr_laundromat.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -555,6 +579,14 @@
             "Value": {
                 "id": "76f57f1d-5007-4e55-9ea6-45a4f48ea5ec",
                 "resourcePath": "views\/a9e52bc2-b8cd-463b-863e-47fcdc192ff1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab7d359c-a891-4ad4-a83d-e69fee833546",
+            "Value": {
+                "id": "e3d9af8a-120f-45d4-a0c2-9f6c85f32f0c",
+                "resourcePath": "views\/ab7d359c-a891-4ad4-a83d-e69fee833546.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -594,7 +626,7 @@
             "Key": "b032a570-4c7f-4233-bb8a-6267b2229cee",
             "Value": {
                 "id": "05ff9874-e819-48c2-baa0-dcc0910f67c6",
-                "resourcePath": "sounds\\snd_activity_cook\\snd_activity_cook.yy",
+                "resourcePath": "sounds\/snd_activity_cook\/snd_activity_cook.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -602,7 +634,7 @@
             "Key": "b0d44b68-3888-48ad-a786-34dc722a67c6",
             "Value": {
                 "id": "cc6fbe53-e0ad-4729-bd9d-2118d38b3817",
-                "resourcePath": "sprites\\spr_mall\\spr_mall.yy",
+                "resourcePath": "sprites\/spr_mall\/spr_mall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -775,11 +807,35 @@
             }
         },
         {
+            "Key": "e90d7913-47cf-4283-8ed6-59f87a2b789b",
+            "Value": {
+                "id": "1f9ee106-bf67-4e09-a812-9da5bf18b842",
+                "resourcePath": "sounds\/snd_stat_down\/snd_stat_down.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e9ef3c26-74b9-4065-a6f4-68365caeb8a4",
+            "Value": {
+                "id": "2da36b6b-501a-43ce-9191-7900885451f3",
+                "resourcePath": "sounds\/snd_accept\/snd_accept.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f249ad3c-7cd6-4e4e-b7e1-c35338c6c3ab",
             "Value": {
                 "id": "86c3e652-f5a0-4955-a92b-166d530548df",
                 "resourcePath": "objects\/obj_activity_instrument\/obj_activity_instrument.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f3482c59-47c5-4317-962a-1aae527f070d",
+            "Value": {
+                "id": "363be60f-cec0-4aeb-97fb-c56687ca4f12",
+                "resourcePath": "sounds\/snd_cursormove\/snd_cursormove.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -810,7 +866,7 @@
             "Key": "ff6542e9-5fae-430b-85d3-45fcbcfb4844",
             "Value": {
                 "id": "a514d1ae-93a3-4886-8c51-09a0781dcf26",
-                "resourcePath": "sprites\\spr_park\\spr_park.yy",
+                "resourcePath": "sprites\/spr_park\/spr_park.yy",
                 "resourceType": "GMSprite"
             }
         }

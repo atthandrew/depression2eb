@@ -21,11 +21,13 @@ else{
 //Check if hovering, then perform button function
 if(hover == 1){
 	if(mouse_check_button_released(mb_left)){
+		
 		switch(BUTTON_TYPE){
 			
 			//MAIN MENU BUTTONS
 			
 			case 1: //Play
+				audio_play_sound(snd_accept, 100, false);
 				with(obj_mainmenu){
 					event_user(2);
 				}
@@ -33,6 +35,7 @@ if(hover == 1){
 			break;
 				
 			case 2: //Options
+				audio_play_sound(snd_accept, 100, false);
 				with(obj_mainmenu){
 					event_user(0);
 				}
@@ -43,20 +46,23 @@ if(hover == 1){
 			break;
 			
 			case 4: //Options - Back to Main
+				audio_play_sound(snd_pause, 100, false);
 				with(obj_mainmenu){
 					event_user(1);	
 				}
 			break;
 			
-			//OPTIONS MENU BUTTONS
+			//PAUSE MENU BUTTONS
 			
 			case 5: //Resume button pressed
+				audio_play_sound(snd_accept, 100, false);
 				with(obj_pausemenu){
 					event_user(2);
 				}
 			break;
 			
 			case 6: //Quit to Main button pressed
+				audio_play_sound(snd_pause, 100, false);
 				with(obj_pausemenu){
 					event_user(4);
 				}

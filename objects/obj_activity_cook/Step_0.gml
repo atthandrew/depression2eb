@@ -31,14 +31,14 @@ if(myTextbox != noone){
 						if (mealQuality < 5)
 						{
 							myText[1] = "You learned a new recipe.";
-							myTextbox.greenText = "P+ M+ ";
-							myTextbox.redText = "E- S-";
+							myTextbox.greenText[1] = "P+ M+ ";
+							myTextbox.redText[1] = "E- S-";
 						}
 						else
 						{
 							myText[1] = "You perfected a recipe and made a five star dish! (P+)";
-							myTextbox.greenText = "P++ M+ ";
-							myTextbox.redText = "E- S-";
+							myTextbox.greenText[1] = "P++ M+ ";
+							myTextbox.redText[1] = "E- S-";
 							obj_game.pHealth++;
 						}
 						advance_textbox_page(myTextbox, self);
@@ -49,8 +49,8 @@ if(myTextbox != noone){
 					else
 					{
 						myText[1] = "You cooked yourself a nice homemade meal."
-						myTextbox.greenText = "P+ M+ ";
-						myTextbox.redText = "E- S-";
+						myTextbox.greenText[1] = "P+ M+ ";
+						myTextbox.redText[1] = "E- S-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
 					}

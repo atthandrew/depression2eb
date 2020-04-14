@@ -24,8 +24,8 @@ if(myTextbox != noone){
 					obj_game.sHealth--;
 			
 					myText[1] = "The house looks much better now";
-					myTextbox.greenText = "P+ M+ ";
-					myTextbox.redText = "E- S-";
+					myTextbox.greenText[1] = "P+ M+ ";
+					myTextbox.redText[1] = "E- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}

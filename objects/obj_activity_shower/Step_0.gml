@@ -18,14 +18,14 @@ if(myTextbox != noone){
 					if(obj_game.days_since_shower > 2)
 					{
 						myText[1] = "You feel much cleaner and refreshed now.";
-						myTextbox.greenText = "S+ P+ ";
-						myTextbox.redText = "E- M-";
+						myTextbox.greenText[1] = "S+ P+ ";
+						myTextbox.redText[1] = "E- M-";
 					}
 					else
 					{
 						myText[1] = "You freshen up and feel better.";
-						myTextbox.greenText = "S+ P+ ";
-						myTextbox.redText = "E- M-";
+						myTextbox.greenText[1] = "S+ P+ ";
+						myTextbox.redText[1] = "E- M-";
 					}
 					//Record that you've taken a shower
 					obj_game.days_since_shower = 0;
