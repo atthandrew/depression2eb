@@ -12,6 +12,7 @@ if(myTextbox != noone){
 				obj_game.mHealth--;
 				obj_game.pHealth++;
 				obj_game.sHealth++;
+				audio_play_sound(snd_outdoor_park, 100, false);
 			
 				myText[1] = "You go for a nice walk and get some fresh air.";
 				myTextbox.greenText = "S+ P+ ";

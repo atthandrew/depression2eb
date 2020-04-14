@@ -13,6 +13,7 @@ if(myTextbox != noone){
 					obj_game.mHealth--;
 					obj_game.pHealth++;
 					obj_game.sHealth++;
+					audio_play_sound(snd_activity_shower, 100, false);
 			
 					if(obj_game.days_since_shower > 2)
 					{

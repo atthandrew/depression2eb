@@ -22,6 +22,7 @@ if(myTextbox != noone){
 					obj_game.mHealth++;
 					obj_game.pHealth--;
 					obj_game.sHealth++;
+					audio_play_sound(snd_activity_tv, 100, false);
 					daysWatched++;
 			
 					if (daysWatched == showComplete)

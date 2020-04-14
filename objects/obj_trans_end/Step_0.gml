@@ -14,6 +14,7 @@ if(myTextbox.page == 1){
 		obj_game.progress = 1;
 		obj_game.day = 0;
 		obj_game.energy = 3;
+		obj_game.bed = false;
 		room_goto(rm_mainmenu);
 	}
 	

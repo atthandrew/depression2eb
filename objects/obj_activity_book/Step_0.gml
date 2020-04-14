@@ -13,12 +13,16 @@ if(myTextbox != noone){
 				myName = "You";
 				advance_textbox_page(myTextbox, self);
 				awaitinput = false;
+			}
+			else
+			{
 				if(obj_game.energy > 0)
 				{
 					obj_game.energy--; 
 					obj_game.mHealth++;
 					obj_game.pHealth--; 
 					obj_game.sHealth++;
+					audio_play_sound(snd_activity_book, 100, false);
 					daysRead++;
 			
 					if (daysRead == readComplete)

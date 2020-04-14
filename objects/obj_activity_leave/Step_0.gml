@@ -14,6 +14,7 @@ if(myTextbox != noone){
 			}
 			else
 			{
+				audio_play_sound(snd_activity_leave, 100, false);
 				room_goto(rm_map);
 			}
 		}

@@ -2,7 +2,7 @@
     "id": "28c919db-2e20-4447-8c6c-efc729189d7d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_trans_1to2",
+    "name": "obj_trans_daychange",
     "eventList": [
         {
             "id": "67a4b849-c787-409c-a265-2741605bcfa0",

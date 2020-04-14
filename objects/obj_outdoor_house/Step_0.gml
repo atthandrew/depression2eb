@@ -7,6 +7,7 @@ if(myTextbox != noone){
 		if(keyboard_check_pressed(ord("1")))
 		{
 			myText[1] = "Maybe you'll head back inside.";
+			audio_play_sound(snd_outdoor_home, 100, false);
 			stay_on_map = false;
 			advance_textbox_page(myTextbox, self);
 			awaitinput = false;

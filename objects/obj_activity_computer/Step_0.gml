@@ -51,6 +51,7 @@ if(myTextbox != noone){
 				obj_game.pHealth++;
 				obj_game.sHealth--;
 				obj_game.days_since_work = 0;
+				audio_play_sound(snd_activity_computerWork, 100, false);
 				daysWorked++;
 			
 				if (daysWorked == workComplete)

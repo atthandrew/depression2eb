@@ -7,8 +7,8 @@ switch(obj_game.progress){
 
 	break;
 	
-	case 2: //Day 2
-
+	case 2:
+		
 	break;
 	
 	case 3:
@@ -61,3 +61,14 @@ switch(obj_game.progress){
 	
 	break;
 }
+//if(instance_exists(obj_textbox))
+//{
+//	if(myText == "You wake up feeling a little more worn down than usual.")
+//	{
+//		myTextbox.redText = "E-";
+//	}
+//	else
+//	{
+//		myTextbox.redText = "";
+//	}
+//}
