@@ -343,6 +343,22 @@
             }
         },
         {
+            "Key": "79249514-f42c-40a9-bc46-1c1c5da6feb2",
+            "Value": {
+                "id": "16a450eb-43c9-4026-a5a3-874552ef995d",
+                "resourcePath": "sprites\\spr_cinema\\spr_cinema.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7eea5644-b4f7-4cf7-8173-4363654579c3",
+            "Value": {
+                "id": "8f0c1f06-17c7-404d-b8f4-2e63ba751d2b",
+                "resourcePath": "sprites\\spr_house\\spr_house.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "86606aff-9f0c-4d96-bed8-a4a9626b3fa2",
             "Value": {
                 "id": "fe7a8a23-feb2-493a-b1a2-f6335de50b66",
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "a2b8d5b5-6284-45dc-8e80-f0997220217b",
+            "Value": {
+                "id": "8bca9fe2-d064-471f-975b-306220767e64",
+                "resourcePath": "sprites\\spr_laundromat\\spr_laundromat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4131d89-d6b9-41e8-88e1-e74fa3738d50",
             "Value": {
                 "id": "3529b1af-4493-42b0-b438-ca45b9080cb9",
@@ -500,6 +524,14 @@
                 "id": "86ef36e0-fa0f-4ba6-b5ff-ba9283f00d55",
                 "resourcePath": "views\/ae9af1b8-e1b5-4e8d-b578-e678b9ef1178.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b0d44b68-3888-48ad-a786-34dc722a67c6",
+            "Value": {
+                "id": "cc6fbe53-e0ad-4729-bd9d-2118d38b3817",
+                "resourcePath": "sprites\\spr_mall\\spr_mall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -700,6 +732,14 @@
                 "id": "e7b4aee1-2a5e-4db9-abb8-ff295600b8f3",
                 "resourcePath": "objects\/obj_player\/obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ff6542e9-5fae-430b-85d3-45fcbcfb4844",
+            "Value": {
+                "id": "a514d1ae-93a3-4886-8c51-09a0781dcf26",
+                "resourcePath": "sprites\\spr_park\\spr_park.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
