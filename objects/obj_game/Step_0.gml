@@ -126,7 +126,7 @@ if(bed){
 }
 
 if((mHealth <= 0 || pHealth <= 0 || sHealth <= 0) && (room == rm_house && !instance_exists(obj_textbox))){
-	//room_goto(rm_gameover);
+	room_goto(rm_gameover);
 	mHealth = 5;
 	pHealth = 5;
 	sHealth = 5;

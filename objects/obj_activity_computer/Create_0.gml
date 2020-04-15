@@ -11,3 +11,5 @@ gameComplete = 0;
 
 daysWorked = 0;
 workComplete = 0;
+
+workBonus = false;

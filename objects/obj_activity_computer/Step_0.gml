@@ -12,6 +12,7 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth--;
 				obj_game.sHealth++;
+				audio_play_sound(snd_activity_game, 100, false);
 				daysGamed++;
 			
 				if (daysGamed == gameComplete)
@@ -51,28 +52,45 @@ if(myTextbox != noone){
 				obj_game.pHealth++;
 				obj_game.sHealth--;
 				obj_game.days_since_work = 0;
-				audio_play_sound(snd_activity_computerWork, 100, false);
-				daysWorked++;
-			
-				if (daysWorked == workComplete)
+				workBonus = true;
+				if(workBonus)
 				{
-					myText[1] = "You finished your project and got a bonus! (P+)";
-					obj_game.pHealth++;
-					myTextbox.greenText[1] = "M+ P++ ";
-					myTextbox.redText[1] = "E-- S-";
-					advance_textbox_page(myTextbox, self);
-					awaitinput = false;
-					workComplete = 0;
-					daysWorked = 0;
+					audio_play_sound(snd_stat_up, 100, false);
 				}
 				else
 				{
-					myText[1] = "You worked on your project.";
-					myTextbox.greenText[1] = "M+ P+ ";
-					myTextbox.redText[1] = "E-- S-";
-					advance_textbox_page(myTextbox, self);
-					awaitinput = false;
+					audio_play_sound(snd_activity_computerWork, 100, false);
 				}
+				daysWorked++;
+				
+				myText[1] = "You finished your project and got a bonus! (P+)";
+				obj_game.pHealth++;
+				myTextbox.greenText[1] = "M+ P++ ";
+				myTextbox.redText[1] = "E-- S-";
+				advance_textbox_page(myTextbox, self);
+				awaitinput = false;
+				workComplete = 0;
+				daysWorked = 0;
+			
+				//if (daysWorked == workComplete)
+				//{
+				//	myText[1] = "You finished your project and got a bonus! (P+)";
+				//	obj_game.pHealth++;
+				//	myTextbox.greenText[1] = "M+ P++ ";
+				//	myTextbox.redText[1] = "E-- S-";
+				//	advance_textbox_page(myTextbox, self);
+				//	awaitinput = false;
+				//	workComplete = 0;
+				//	daysWorked = 0;
+				//}
+				//else
+				//{
+				//	myText[1] = "You worked on your project.";
+				//	myTextbox.greenText[1] = "M+ P+ ";
+				//	myTextbox.redText[1] = "E-- S-";
+				//	advance_textbox_page(myTextbox, self);
+				//	awaitinput = false;
+				//}
 			}
 			else
 			{
@@ -99,4 +117,10 @@ if (gameComplete == 0)
 if (workComplete == 0)
 {
 	workComplete = irandom_range(3, 5);
+}
+
+if(!audio_is_playing(snd_stat_up) && workBonus)
+{
+	audio_play_sound(snd_activity_computerWork, 100, false);
+	workBonus = false;
 }
