@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "89d0dcd1-3988-4342-a0e2-df45db8d4712",
+            "Value": {
+                "id": "9a4c7943-c6b0-411d-9c3d-5149a9a0559a",
+                "resourcePath": "sprites\\spr_daytransition\\spr_daytransition.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c02d627-72ae-4f86-9376-6897d3cd3ff4",
             "Value": {
                 "id": "0e29cbce-3b28-4e86-b7b4-25f872ef7689",
