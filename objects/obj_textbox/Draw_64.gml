@@ -23,7 +23,7 @@ draw_set_color(c_white);
 
 //draw textbox text
 if(charCount < string_length(text[page])){
-	charCount += 2;
+	charCount += 0.75;
 }
 textPart = string_copy(text[page], 1, charCount);
 draw_text_ext(boxX + xBuffer, boxY + 1.5*stringHeight + yBuffer, textPart, stringHeight, boxWidth);
