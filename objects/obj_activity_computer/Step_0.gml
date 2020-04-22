@@ -52,7 +52,29 @@ if(myTextbox != noone){
 				obj_game.pHealth++;
 				obj_game.sHealth--;
 				obj_game.days_since_work = 0;
-				workBonus = true;
+				daysWorked++;
+			
+				if (daysWorked == workComplete)
+				{
+					workBonus = true;
+					myText[1] = "You finished your project and got a bonus! (P+)";
+					obj_game.pHealth++;
+					myTextbox.greenText[1] = "M+ P++ ";
+					myTextbox.redText[1] = "E-- S-";
+					advance_textbox_page(myTextbox, self);
+					awaitinput = false;
+					workComplete = 0;
+					daysWorked = 0;
+					workBonus = false;
+				}
+				else
+				{
+					myText[1] = "You worked on your project.";
+					myTextbox.greenText[1] = "M+ P+ ";
+					myTextbox.redText[1] = "E-- S-";
+					advance_textbox_page(myTextbox, self);
+					awaitinput = false;
+				}
 				if(workBonus)
 				{
 					audio_play_sound(snd_stat_up, 100, false);
@@ -61,36 +83,6 @@ if(myTextbox != noone){
 				{
 					audio_play_sound(snd_activity_computerWork, 100, false);
 				}
-				daysWorked++;
-				
-				myText[1] = "You finished your project and got a bonus! (P+)";
-				obj_game.pHealth++;
-				myTextbox.greenText[1] = "M+ P++ ";
-				myTextbox.redText[1] = "E-- S-";
-				advance_textbox_page(myTextbox, self);
-				awaitinput = false;
-				workComplete = 0;
-				daysWorked = 0;
-			
-				//if (daysWorked == workComplete)
-				//{
-				//	myText[1] = "You finished your project and got a bonus! (P+)";
-				//	obj_game.pHealth++;
-				//	myTextbox.greenText[1] = "M+ P++ ";
-				//	myTextbox.redText[1] = "E-- S-";
-				//	advance_textbox_page(myTextbox, self);
-				//	awaitinput = false;
-				//	workComplete = 0;
-				//	daysWorked = 0;
-				//}
-				//else
-				//{
-				//	myText[1] = "You worked on your project.";
-				//	myTextbox.greenText[1] = "M+ P+ ";
-				//	myTextbox.redText[1] = "E-- S-";
-				//	advance_textbox_page(myTextbox, self);
-				//	awaitinput = false;
-				//}
 			}
 			else
 			{

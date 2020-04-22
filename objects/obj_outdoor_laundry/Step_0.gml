@@ -18,6 +18,7 @@ if(myTextbox != noone)
 					obj_game.mHealth++;
 					obj_game.pHealth--;
 					obj_game.sHealth++;
+					audio_play_sound(snd_outdoor_laundry, 100, false);
 			
 					if (obj_game.days_since_laundry > 5)
 					{

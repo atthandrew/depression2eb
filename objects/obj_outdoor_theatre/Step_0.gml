@@ -12,6 +12,7 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth--;
 				obj_game.sHealth++;
+				audio_play_sound(snd_outdoor_theatre, 100, false);
 			
 				if (filmQuality == 10)
 				{
@@ -49,6 +50,7 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth--;
 				obj_game.sHealth = obj_game.sHealth + 2;
+				audio_play_sound(snd_outdoor_theatre, 100, false);
 			
 				if (filmQuality == 10)
 				{

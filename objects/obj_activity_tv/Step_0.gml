@@ -104,6 +104,7 @@ if(myTextbox != noone){
 					obj_game.sHealth--;
 					obj_game.days_since_work = 0;
 					daysListened++;
+					audio_play_sound(snd_activity_tv, 100, false);
 			
 					if (daysListened == songsComplete)
 					{

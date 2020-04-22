@@ -13,6 +13,7 @@ if(myTextbox != noone){
 				obj_game.pHealth++;
 				obj_game.sHealth--;
 				daysPracticed++;
+				audio_play_sound(snd_activity_instrument, 100, false);
 			
 				if (daysPracticed == practiceComplete)
 				{

@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "075a7d2c-4ae7-4d4a-9da3-fd3a7bb9b19d",
+            "Value": {
+                "id": "d3cd0bc4-9968-43ac-8ae5-67e50a7370f1",
+                "resourcePath": "objects\\obj_outdoor_shop\\obj_outdoor_shop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0b446394-914b-472a-a3cf-87426c2a8eb7",
             "Value": {
                 "id": "a9fbf6d2-bcfc-4607-94db-fd1fa9911676",
@@ -279,6 +287,14 @@
             }
         },
         {
+            "Key": "5261de76-8c8a-4ab5-8637-398c57a42817",
+            "Value": {
+                "id": "d0525f25-ae5c-4f0a-92ee-d613370cf884",
+                "resourcePath": "sounds\\snd_activity_instrument\\snd_activity_instrument.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5529fdf6-1357-4a22-9a25-7b483a807a05",
             "Value": {
                 "id": "5b9a0fa4-dbfa-4546-a90c-aad932c80592",
@@ -396,6 +412,14 @@
                 "id": "bbbc7aab-13c0-4828-bb80-40d03511389c",
                 "resourcePath": "views\/757c4aec-2188-4dec-a203-5dd1b87c420c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "75db14e7-2e4f-4bd1-b495-70b002249001",
+            "Value": {
+                "id": "5b89137d-c49d-4953-a583-4698fb595823",
+                "resourcePath": "sounds\\snd_activity_bed\\snd_activity_bed.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -655,6 +679,30 @@
             }
         },
         {
+            "Key": "b4f817a8-ad9a-4ad6-9c7d-64cb47d3de07",
+            "Value": {
+                "id": "4a4816f8-8a2a-46fd-9e55-a7ae81985a1f",
+                "resourcePath": "sounds\\snd_outdoor_theatre\\snd_outdoor_theatre.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b54d1215-471c-4a10-9066-86cefcf3b443",
+            "Value": {
+                "id": "7bcd0ff0-00a7-40c7-b1cb-62e37b405c3a",
+                "resourcePath": "sounds\\snd_outdoor_shop\\snd_outdoor_shop.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b54db5f8-a90b-4841-aa43-08b13c8eaad4",
+            "Value": {
+                "id": "8dc22477-37b5-43a2-abcb-f92a410f232c",
+                "resourcePath": "sounds\\snd_outdoor_laundry\\snd_outdoor_laundry.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b9424ba8-541b-42cf-a50e-0fc00acb2a12",
             "Value": {
                 "id": "e90c38e7-d6b0-4973-8c65-70bfe794c0df",
@@ -684,6 +732,14 @@
                 "id": "522cf96a-4e78-4a00-bedb-cd8c5373111f",
                 "resourcePath": "fonts\/ft_button\/ft_button.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "bdef6a2a-108d-4ab2-bdc3-29f7e08d2874",
+            "Value": {
+                "id": "7c3428f8-6940-4811-b6fb-7be5dbaa0c46",
+                "resourcePath": "sounds\\snd_activity_clean\\snd_activity_clean.yy",
+                "resourceType": "GMSound"
             }
         },
         {
