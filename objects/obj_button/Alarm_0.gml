@@ -18,7 +18,7 @@ switch(BUTTON_TYPE){
 	break;
 			
 	case 4: //Options - Back to Main
-		buttonText = "Back to Main";
+		buttonText = "Back";
 	break;
 	
 	//PAUSE MENU BUTTONS
@@ -29,6 +29,24 @@ switch(BUTTON_TYPE){
 	
 	case 6: //Quit to Main
 		buttonText = "Quit to Main";
+	break;
+	
+	//TEXT SPEED BUTTONS
+	
+	case 7:
+		buttonText = "Text Speed";
+	break;
+	
+	case 8:
+		buttonText = "Slow";
+	break;
+	
+	case 9:
+		buttonText = "Medium";
+	break;
+	
+	case 10:
+		buttonText = "Fast";
 	break;
 			
 	default:

@@ -27,3 +27,6 @@ days_since_laundry = 1;
 //Used for drawing UI
 bar_width = 5;
 bar_spacing = bar_width * 2;
+
+//Game option variables
+text_speed = 1;

@@ -6,9 +6,16 @@ with(obj_button){
 }
 
 //Options Menu Buttons
-var buttonBackToMain = instance_create_depth(gui_width/2, gui_height/2, -4096, obj_button);
-buttonBackToMain.BUTTON_TYPE = 4;
-buttonBackToMain.hoverValue = 4;
-buttonBackToMain.buttonX = gui_width/2;
-buttonBackToMain.buttonY = gui_height/2;
-buttonBackToMain.offset = 0;
+var buttonPlay = instance_create_depth(gui_width/2, gui_height/2, -4096, obj_button);
+buttonPlay.BUTTON_TYPE = 7;
+buttonPlay.hoverValue = 7;
+buttonPlay.buttonX = gui_width/2;
+buttonPlay.buttonY = gui_height/2;
+buttonPlay.offset = 0;
+
+var buttonOptions = instance_create_depth(gui_width/2, gui_height/2, -4096, obj_button);
+buttonOptions.BUTTON_TYPE = 4;
+buttonOptions.hoverValue = 4;
+buttonOptions.buttonX = gui_width/2;
+buttonOptions.buttonY = gui_height/2 + 60;
+buttonOptions.offset = 60;

@@ -39,16 +39,22 @@ if(hover == 1){
 				with(obj_mainmenu){
 					event_user(0);
 				}
+				with(obj_pausemenu){
+					event_user(0);
+				}
 			break;
 			
 			case 3: //Quit
 				game_end();
 			break;
 			
-			case 4: //Options - Back to Main
+			case 4: //Options - Back
 				audio_play_sound(snd_pause, 100, false);
 				with(obj_mainmenu){
 					event_user(1);	
+				}
+				with(obj_pausemenu){
+					event_user(3);
 				}
 			break;
 			
@@ -65,6 +71,51 @@ if(hover == 1){
 				audio_play_sound(snd_pause, 100, false);
 				with(obj_pausemenu){
 					event_user(4);
+				}
+			break;
+			
+			case 7: //Options - Text Speed
+				audio_play_sound(snd_accept, 100, false);
+				with(obj_mainmenu){
+					event_user(5);
+				}
+				with(obj_pausemenu){
+					event_user(5);	
+				}
+			break;
+			
+			//TEXT SPEED BUTTONS
+			
+			case 8: //SLOW
+				audio_play_sound(snd_accept, 100, false);
+				obj_game.text_speed = 0.5;
+				with(obj_mainmenu){
+					event_user(0);
+				}
+				with(obj_pausemenu){
+					event_user(0);
+				}
+			break;
+			
+			case 9: //MEDIUM
+				audio_play_sound(snd_accept, 100, false);
+				obj_game.text_speed = 1.0;
+				with(obj_mainmenu){
+					event_user(0);
+				}
+				with(obj_pausemenu){
+					event_user(0);
+				}
+			break;
+			
+			case 10: //FAST
+				audio_play_sound(snd_accept, 100, false);
+				obj_game.text_speed = 2.0;
+				with(obj_mainmenu){
+					event_user(0);
+				}
+				with(obj_pausemenu){
+					event_user(0);
 				}
 			break;
 			
