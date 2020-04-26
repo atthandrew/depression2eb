@@ -144,3 +144,7 @@ if(sHealth > 10)
 {
 	sHealth = 10;
 }
+
+//Set the saturation strengt
+var min_stat = min(mHealth, pHealth, sHealth);
+desat_strength = 1 - min_stat / 10;

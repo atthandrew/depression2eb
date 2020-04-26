@@ -11,6 +11,7 @@ if(obj_game.returning_home){
 	
 	obj_game.returning_home = false;
 	myText[0] = "I'm back.";
+	myTextbox.name = "You";
 }
 
 else{

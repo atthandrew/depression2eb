@@ -30,3 +30,9 @@ bar_spacing = bar_width * 2;
 
 //Game option variables
 text_speed = 1;
+
+//Desaturation shader
+shader = shd_desaturation;
+u_strength = shader_get_uniform(shader, "strength");
+desat_strength = 0;
+application_surface_draw_enable(false);

@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "387a74ef-dea2-4722-9d28-9e6266224f71",
+            "Value": {
+                "id": "4b71abe8-49b0-49c2-b2d7-f13b930c4761",
+                "resourcePath": "shaders\/shd_desaturation\/shd_desaturation.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "38a565b2-d4fe-4e4a-b4cd-2551d0c16cbe",
             "Value": {
                 "id": "1e08c760-f88f-4fbb-93eb-a6414d6b01d6",

@@ -3,7 +3,9 @@
 randomize();
 var rand = random_range(1, 5);
 
+draw_set_alpha(box_alpha);
 draw_sprite(spr_textbox, 0, boxX, boxY);
+draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_font(ft_textbox);
 
