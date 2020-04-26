@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+randomize();
+var rand = random_range(1, 5);
+
 draw_sprite(spr_textbox, 0, boxX, boxY);
 draw_set_color(c_white);
 draw_set_font(ft_textbox);
@@ -23,6 +26,9 @@ draw_set_color(c_white);
 
 //draw textbox text
 if(charCount < string_length(text[page])){
+	if(charCount % (obj_game.text_speed * 4) == 0 && rand <= 4){
+		audio_play_sound(snd_textscroll, 100, false);
+	}
 	charCount += obj_game.text_speed;
 }
 textPart = string_copy(text[page], 1, charCount);

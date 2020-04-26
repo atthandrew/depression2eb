@@ -50,7 +50,7 @@
             "Key": "075a7d2c-4ae7-4d4a-9da3-fd3a7bb9b19d",
             "Value": {
                 "id": "d3cd0bc4-9968-43ac-8ae5-67e50a7370f1",
-                "resourcePath": "objects\\obj_outdoor_shop\\obj_outdoor_shop.yy",
+                "resourcePath": "objects\/obj_outdoor_shop\/obj_outdoor_shop.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "43d2612a-d5a3-4bd6-af19-bd2ba6dfb085",
+            "Value": {
+                "id": "23159f35-6e9a-423e-8487-56f8cdc4f4c4",
+                "resourcePath": "sounds\/snd_textscroll\/snd_textscroll.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "450f6c5f-134c-4e6e-9525-38828f0c27f2",
             "Value": {
                 "id": "ba62e743-63a3-412f-84b2-882dc95cc7b1",
@@ -290,7 +298,7 @@
             "Key": "5261de76-8c8a-4ab5-8637-398c57a42817",
             "Value": {
                 "id": "d0525f25-ae5c-4f0a-92ee-d613370cf884",
-                "resourcePath": "sounds\\snd_activity_instrument\\snd_activity_instrument.yy",
+                "resourcePath": "sounds\/snd_activity_instrument\/snd_activity_instrument.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -418,7 +426,7 @@
             "Key": "75db14e7-2e4f-4bd1-b495-70b002249001",
             "Value": {
                 "id": "5b89137d-c49d-4953-a583-4698fb595823",
-                "resourcePath": "sounds\\snd_activity_bed\\snd_activity_bed.yy",
+                "resourcePath": "sounds\/snd_activity_bed\/snd_activity_bed.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -498,7 +506,7 @@
             "Key": "89d0dcd1-3988-4342-a0e2-df45db8d4712",
             "Value": {
                 "id": "9a4c7943-c6b0-411d-9c3d-5149a9a0559a",
-                "resourcePath": "sprites\\spr_daytransition\\spr_daytransition.yy",
+                "resourcePath": "sprites\/spr_daytransition\/spr_daytransition.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -682,7 +690,7 @@
             "Key": "b4f817a8-ad9a-4ad6-9c7d-64cb47d3de07",
             "Value": {
                 "id": "4a4816f8-8a2a-46fd-9e55-a7ae81985a1f",
-                "resourcePath": "sounds\\snd_outdoor_theatre\\snd_outdoor_theatre.yy",
+                "resourcePath": "sounds\/snd_outdoor_theatre\/snd_outdoor_theatre.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -690,7 +698,7 @@
             "Key": "b54d1215-471c-4a10-9066-86cefcf3b443",
             "Value": {
                 "id": "7bcd0ff0-00a7-40c7-b1cb-62e37b405c3a",
-                "resourcePath": "sounds\\snd_outdoor_shop\\snd_outdoor_shop.yy",
+                "resourcePath": "sounds\/snd_outdoor_shop\/snd_outdoor_shop.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -698,7 +706,7 @@
             "Key": "b54db5f8-a90b-4841-aa43-08b13c8eaad4",
             "Value": {
                 "id": "8dc22477-37b5-43a2-abcb-f92a410f232c",
-                "resourcePath": "sounds\\snd_outdoor_laundry\\snd_outdoor_laundry.yy",
+                "resourcePath": "sounds\/snd_outdoor_laundry\/snd_outdoor_laundry.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -738,7 +746,7 @@
             "Key": "bdef6a2a-108d-4ab2-bdc3-29f7e08d2874",
             "Value": {
                 "id": "7c3428f8-6940-4811-b6fb-7be5dbaa0c46",
-                "resourcePath": "sounds\\snd_activity_clean\\snd_activity_clean.yy",
+                "resourcePath": "sounds\/snd_activity_clean\/snd_activity_clean.yy",
                 "resourceType": "GMSound"
             }
         },
