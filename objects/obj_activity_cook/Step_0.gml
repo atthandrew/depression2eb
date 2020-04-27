@@ -22,29 +22,33 @@ if(myTextbox != noone){
 					obj_game.mHealth++;
 					obj_game.pHealth++;
 					obj_game.sHealth--;
-					audio_play_sound(snd_activity_cook, 100, false);
-					daysCooked++;
+					obj_game.daysCooked++;
 			
-					if (daysCooked == recipeComplete)
+					if (obj_game.daysCooked == obj_game.recipeComplete)
 					{
-						mealQuality = irandom_range(1, 5);
-						if (mealQuality < 5)
+						mealQuality = irandom_range(1, 3);
+						if (mealQuality < 3)
 						{
 							myText[1] = "You learned a new recipe.";
 							myTextbox.greenText[1] = "P+ M+ ";
 							myTextbox.redText[1] = "E- S-";
+							advance_textbox_page(myTextbox, self);
+							awaitinput = false;
+							obj_game.recipeComplete = 0;
+							obj_game.daysCooked = 0;
 						}
 						else
 						{
+							mealBonus = true;
 							myText[1] = "You perfected a recipe and made a five star dish! (P+)";
 							myTextbox.greenText[1] = "P++ M+ ";
 							myTextbox.redText[1] = "E- S-";
 							obj_game.pHealth++;
+							advance_textbox_page(myTextbox, self);
+							awaitinput = false;
+							obj_game.recipeComplete = 0;
+							obj_game.daysCooked = 0;
 						}
-						advance_textbox_page(myTextbox, self);
-						awaitinput = false;
-						recipeComplete = 0;
-						daysCooked = 0;
 					}
 					else
 					{
@@ -53,6 +57,14 @@ if(myTextbox != noone){
 						myTextbox.redText[1] = "E- S-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
+					}
+					if(mealBonus)
+					{
+						audio_play_sound(snd_stat_up, 100, false);
+					}
+					else
+					{
+						audio_play_sound(snd_activity_cook, 100, false);
 					}
 				}
 				else
@@ -84,7 +96,13 @@ if(myTextbox != noone){
 	}
 }
 
-if (recipeComplete == 0)
+if(!audio_is_playing(snd_stat_up) && mealBonus)
 {
-	recipeComplete = irandom_range(3, 5)
+	audio_play_sound(snd_activity_cook, 100, false);
+	mealBonus = false;
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_cook))
+{
+	audio_stop_sound(snd_activity_cook);
 }

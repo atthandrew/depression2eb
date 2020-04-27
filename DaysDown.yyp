@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0341039d-bc5a-44f4-bbd3-a6b157aa9340",
+            "Value": {
+                "id": "7e1f36f5-ce71-48bd-a2ec-5e1e54416b65",
+                "resourcePath": "sounds\\snd_activity_dance\\snd_activity_dance.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "075a7d2c-4ae7-4d4a-9da3-fd3a7bb9b19d",
             "Value": {
                 "id": "d3cd0bc4-9968-43ac-8ae5-67e50a7370f1",
@@ -68,6 +76,14 @@
                 "id": "3ff05a9f-0b81-4bcc-9646-bd764002914d",
                 "resourcePath": "views\/10534248-300d-40d4-b8a7-6a6b740e2b52.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "12d3e2a6-6fb4-4202-b189-b475924b7da4",
+            "Value": {
+                "id": "df13eee1-ec10-47c8-a6c6-4097ddb16964",
+                "resourcePath": "sounds\\MenuMusic\\MenuMusic.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -199,6 +215,14 @@
             }
         },
         {
+            "Key": "301960a8-3191-4923-8bf0-a1fb298ad095",
+            "Value": {
+                "id": "fb7dc302-e9b9-47f2-b5b7-9b74211f99cd",
+                "resourcePath": "sounds\\snd_activity_fridge\\snd_activity_fridge.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "339af1ea-d053-45b5-9b7a-fb7248f473c9",
             "Value": {
                 "id": "002190ea-cc04-4e19-8acf-0b4b0e341fc4",
@@ -210,7 +234,7 @@
             "Key": "355e86b5-0b1e-4357-a924-8506db431121",
             "Value": {
                 "id": "4522f3b3-c377-4442-bcb0-8bccfd718b98",
-                "resourcePath": "sounds\/snd_activity_game\/snd_activity_game.yy",
+                "resourcePath": "sounds\\snd_outdoor_arcade\\snd_outdoor_arcade.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -239,6 +263,14 @@
             }
         },
         {
+            "Key": "41a7cc1f-dc8f-4c7d-9e13-a598a8580589",
+            "Value": {
+                "id": "beb9a016-f4da-4994-b949-7bd6d2c5d717",
+                "resourcePath": "objects\\obj_activity_meditate\\obj_activity_meditate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "43d2612a-d5a3-4bd6-af19-bd2ba6dfb085",
             "Value": {
                 "id": "23159f35-6e9a-423e-8487-56f8cdc4f4c4",
@@ -259,6 +291,14 @@
             "Value": {
                 "id": "daf82033-6eae-43c3-ac9e-ac265ff69cf9",
                 "resourcePath": "objects\/obj_activity_book\/obj_activity_book.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "49a3d54e-5958-4221-ab88-efa4ddf13ed6",
+            "Value": {
+                "id": "3107ffb7-3ceb-4272-9c79-fc5ceff316ff",
+                "resourcePath": "objects\\obj_activity_fridge\\obj_activity_fridge.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -420,6 +460,14 @@
                 "id": "9eb69f4e-48b4-4c77-92df-b20678aac40a",
                 "resourcePath": "sprites\/spr_acitivity_cook\/spr_acitivity_cook.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "75664757-ccd3-4f37-8738-757a83eaca5c",
+            "Value": {
+                "id": "766536ba-dc9a-4ee5-8448-d74a15205341",
+                "resourcePath": "sounds\\snd_outdoor_bar\\snd_outdoor_bar.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -719,6 +767,14 @@
             }
         },
         {
+            "Key": "b863e981-c182-4e17-b74b-62501f60810f",
+            "Value": {
+                "id": "7b996654-aee3-42d9-9473-67c11d0b757e",
+                "resourcePath": "sounds\\snd_activity_computerGame\\snd_activity_computerGame.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b9424ba8-541b-42cf-a50e-0fc00acb2a12",
             "Value": {
                 "id": "e90c38e7-d6b0-4973-8c65-70bfe794c0df",
@@ -871,10 +927,26 @@
             }
         },
         {
+            "Key": "d76d82a9-cb5e-4a36-8487-ca13920bed2a",
+            "Value": {
+                "id": "018a7f79-25ce-4a67-af74-009c12a75463",
+                "resourcePath": "sprites\\spr_placeholder\\spr_placeholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d9510545-a8ad-4185-8b84-4559a32c0c3f",
             "Value": {
                 "id": "e57de0f8-5e9a-404b-915e-f5bfcdc0ec6c",
                 "resourcePath": "objects\/obj_outdoor_laundry\/obj_outdoor_laundry.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc5309ec-f7ce-4ae3-b0ce-a27a9bb1cd98",
+            "Value": {
+                "id": "f2780a5c-0a5d-4be0-840d-a5198fcce28f",
+                "resourcePath": "objects\\obj_outdoor_barcade\\obj_outdoor_barcade.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -903,6 +975,14 @@
             }
         },
         {
+            "Key": "ee0302b2-4735-47a2-ab0c-dfbae667376b",
+            "Value": {
+                "id": "f49c781b-615d-44af-a6bd-ac4c94a7bc77",
+                "resourcePath": "sounds\\snd_activity_show\\snd_activity_show.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f249ad3c-7cd6-4e4e-b7e1-c35338c6c3ab",
             "Value": {
                 "id": "86c3e652-f5a0-4955-a92b-166d530548df",
@@ -924,6 +1004,22 @@
                 "id": "7bbcec38-7c3d-4058-9d10-23c427d509a4",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f5e7c3e3-bdf1-44ce-b279-d8347fd34cfe",
+            "Value": {
+                "id": "d505fbcc-c64b-4dab-b030-ac4fbfec5e6a",
+                "resourcePath": "objects\\obj_activity_art\\obj_activity_art.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f862c7c4-0184-4c28-b5ea-658b236f783c",
+            "Value": {
+                "id": "eb322170-f535-4252-9f70-e5b46e1a1159",
+                "resourcePath": "sounds\\snd_activity_art\\snd_activity_art.yy",
+                "resourceType": "GMSound"
             }
         },
         {

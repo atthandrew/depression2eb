@@ -25,8 +25,10 @@ else{
 				myText[3] = "If a health stat reaches 0, your progress resets but the days keep going."
 				myText[4] = "Activities will glow when you are close enough to interact with them.";
 				myText[5] = "Each activity costs a certain amount of energy.";
-				myText[6] = "When you're ready to start the next day, go to bed.";
-				myText[7] = "Survive so many days to reach the end.";
+				myText[6] = "Some activities have bonuses if you do them enough.";
+				myText[7] = "Leaving the house will pull up the map. Use the mouse to interact with it.";
+				myText[8] = "When you're ready to start the next day, go to bed.";
+				myText[9] = "Survive so many days to reach the end.";
 				
 				myTextbox.name = "Tutorial";
 			}
@@ -42,6 +44,8 @@ else{
 			myText[textPos] = "You wake up feeling a little more worn down than usual.";
 			myTextbox.redText[textPos] = "E-";
 			myTextbox.greenText[textPos] = "";
+			textPos++;
+			myText[textPos] = "On certain days the fridge will be restocked. Interacting with the fridge when its stocked will replenish 1 energy.";
 			myTextbox.name = "You";
 		break;
 	
@@ -134,10 +138,24 @@ else{
 		myTextbox.redText[textPos] = "M- P-";
 		myTextbox.greenText[textPos] = "";
 	}
+	if (obj_game.days_since_cooking > 4)
+	{
+		textPos++;
+		myText[textPos] = "It's been a while since you cooked anything and the takeout bill is starting to build up.";
+		myTextbox.redText[textPos] = "M- P-";
+		myTextbox.greenText[textPos] = "";
+	}
 	if (obj_game.days_since_laundry > 5)
 	{
 		textPos++;
 		myText[textPos] = "It's been a while since you did any laundry and your clothes are starting to stink.";
+		myTextbox.redText[textPos] = "M- S-";
+		myTextbox.greenText[textPos] = "";
+	}
+	if (obj_game.days_since_cleaning > 6)
+	{
+		textPos++;
+		myText[textPos] = "It's been a while since you cleaned the house and the garbage is starting to form factions.";
 		myTextbox.redText[textPos] = "M- S-";
 		myTextbox.greenText[textPos] = "";
 	}

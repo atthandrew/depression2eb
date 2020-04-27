@@ -12,10 +12,10 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth--;
 				obj_game.sHealth++;
-				audio_play_sound(snd_outdoor_theatre, 100, false);
 			
-				if (filmQuality == 10)
+				if (filmQuality == 5)
 				{
+					filmBonus = true;
 					myText[1] = "You watched an instant classic! (M+)";
 					myTextbox.greenText[1] = "M++ S+ ";
 					myTextbox.redText[1] = "E- P-";
@@ -32,6 +32,14 @@ if(myTextbox != noone){
 					filmQuality = 0;
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
+				}
+				if(filmBonus)
+				{
+					audio_play_sound(snd_stat_up, 100, false);
+				}
+				else
+				{
+					audio_play_sound(snd_outdoor_theatre, 100, false);
 				}
 			}
 			else
@@ -50,10 +58,10 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth--;
 				obj_game.sHealth = obj_game.sHealth + 2;
-				audio_play_sound(snd_outdoor_theatre, 100, false);
 			
-				if (filmQuality == 10)
+				if (filmQuality == 5)
 				{
+					filmBonus = true;
 					myText[1] = "You and your friends loved it! (M+)";
 					myTextbox.greenText[1] = "M++ S++ ";
 					myTextbox.redText[1] = "E-- P-";
@@ -70,6 +78,14 @@ if(myTextbox != noone){
 					filmQuality = 0;
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
+				}
+				if(filmBonus)
+				{
+					audio_play_sound(snd_stat_up, 100, false);
+				}
+				else
+				{
+					audio_play_sound(snd_outdoor_theatre, 100, false);
 				}
 			}
 			else
@@ -91,5 +107,16 @@ if(myTextbox != noone){
 
 if (filmQuality == 0)
 {
-	filmQuality = irandom_range(1, 10)
+	filmQuality = irandom_range(1, 5)
+}
+
+if(!audio_is_playing(snd_stat_up) && filmBonus)
+{
+	audio_play_sound(snd_outdoor_theatre, 100, false);
+	filmBonus = false;
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_theatre))
+{
+	audio_stop_sound(snd_outdoor_theatre);
 }

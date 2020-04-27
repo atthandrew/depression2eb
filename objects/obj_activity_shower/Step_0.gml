@@ -60,3 +60,8 @@ if(myTextbox != noone){
 		}
 	}
 }
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_shower))
+{
+	audio_stop_sound(snd_activity_shower);
+}

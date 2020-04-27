@@ -20,13 +20,13 @@ if(myTextbox != noone){
 				{
 					obj_game.energy--;
 					obj_game.mHealth++;
-					obj_game.pHealth++;
-					obj_game.sHealth--;
+					obj_game.pHealth--;
+					obj_game.sHealth++;
 					audio_play_sound(snd_activity_clean, 100, false);
 			
 					myText[1] = "The house looks much better now";
-					myTextbox.greenText[1] = "P+ M+ ";
-					myTextbox.redText[1] = "E- S-";
+					myTextbox.greenText[1] = "M+ S+ ";
+					myTextbox.redText[1] = "E- P-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}
@@ -57,4 +57,9 @@ if(myTextbox != noone){
 			}
 		}
 	}
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_clean))
+{
+	audio_stop_sound(snd_activity_clean);
 }

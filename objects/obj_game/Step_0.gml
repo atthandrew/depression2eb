@@ -15,6 +15,7 @@ if(bed){
 			energy = 3;
 			day++;
 			progress++;
+			snackAdded = false;
 			room_goto(rm_daytransition);
 			//warning_given = false;
 			bed = false;
@@ -89,6 +90,7 @@ if(bed){
 			day++;
 			progress++;
 			sHealth++;
+			snackAdded = false;
 			room_goto(rm_daytransition);
 			//warning_given = false;
 			bed = false;
@@ -145,6 +147,79 @@ if(sHealth > 10)
 	sHealth = 10;
 }
 
+//Play menu audio
+if((room == rm_mainmenu || room == rm_daytransition) && !audio_is_playing(MenuMusic))
+{
+	audio_play_sound(MenuMusic, 100, true);
+	audio_sound_gain(MenuMusic, 1, 1000);
+}
+if(room != rm_mainmenu && room != rm_daytransition)
+{
+	audio_sound_gain(MenuMusic, 0, 1000)
+}
+if (audio_sound_get_gain(MenuMusic) == 0)
+{
+	audio_stop_sound(MenuMusic);
+}
+
 //Set the saturation strengt
-var min_stat = min(mHealth, pHealth, sHealth);
-desat_strength = 1 - min_stat / 10;
+if (day == 0)
+{
+	desat_strength = 0;
+}
+else if (progress == 8)
+{
+	desat_strength = 0.9;
+}
+else
+{
+	var min_stat = min(mHealth, pHealth, sHealth);
+	desat_strength = 1 - min_stat / 10;
+}
+
+//Activity bonuses
+if (gameComplete == 0)
+{
+	gameComplete = irandom_range(4, 8);
+}
+
+if (workComplete == 0)
+{
+	workComplete = irandom_range(3, 5);
+}
+
+if (practiceComplete == 0)
+{
+	practiceComplete = irandom_range(5, 8);
+}
+
+if (showComplete == 0)
+{
+	showComplete = irandom_range(1, 5);
+}
+
+if (songsComplete == 0)
+{
+	songsComplete = irandom_range(1, 3);
+}
+
+if (readComplete == 0)
+{
+	readComplete = irandom_range(2, 3);
+}
+
+if (recipeComplete == 0)
+{
+	recipeComplete = irandom_range(2, 3);
+}
+
+if (paintComplete == 0)
+{
+	paintComplete = irandom_range(1, 2);
+}
+
+if((obj_game.progress == 2 || obj_game.progress == 9) && !snackAdded)
+{
+	snackAmount++;
+	snackAdded = true;
+}

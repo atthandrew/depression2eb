@@ -18,7 +18,13 @@
         "b54db5f8-a90b-4841-aa43-08b13c8eaad4",
         "b4f817a8-ad9a-4ad6-9c7d-64cb47d3de07",
         "75db14e7-2e4f-4bd1-b495-70b002249001",
-        "b54d1215-471c-4a10-9066-86cefcf3b443"
+        "b54d1215-471c-4a10-9066-86cefcf3b443",
+        "b863e981-c182-4e17-b74b-62501f60810f",
+        "ee0302b2-4735-47a2-ab0c-dfbae667376b",
+        "0341039d-bc5a-44f4-bbd3-a6b157aa9340",
+        "75664757-ccd3-4f37-8738-757a83eaca5c",
+        "301960a8-3191-4923-8bf0-a1fb298ad095",
+        "f862c7c4-0184-4c28-b5ea-658b236f783c"
     ],
     "filterType": "GMSound",
     "folderName": "Activity Sounds",

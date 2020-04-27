@@ -12,19 +12,19 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth++;
 				obj_game.sHealth--;
-				daysPracticed++;
-				audio_play_sound(snd_activity_instrument, 100, false);
+				obj_game.daysPracticed++;
 			
-				if (daysPracticed == practiceComplete)
+				if (obj_game.daysPracticed == obj_game.practiceComplete)
 				{
-					myText[1] = "You mastered a new song! (P+)";
-					obj_game.pHealth++;
-					myTextbox.greenText[1] = "M+ P++ ";
+					practiceBonus = true;
+					myText[1] = "You mastered a new song! (M+)";
+					obj_game.mHealth++;
+					myTextbox.greenText[1] = "M++ P+ ";
 					myTextbox.redText[1] = "E- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
-					practiceComplete = 0;
-					daysPracticed = 0;
+					obj_game.practiceComplete = 0;
+					obj_game.daysPracticed = 0;
 				}
 				else
 				{
@@ -33,6 +33,14 @@ if(myTextbox != noone){
 					myTextbox.redText[1] = "E- S-";
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
+				}
+				if(practiceBonus)
+				{
+					audio_play_sound(snd_stat_up, 100, false);
+				}
+				else
+				{
+					audio_play_sound(snd_activity_instrument, 100, false);
 				}
 			}
 			else
@@ -52,7 +60,13 @@ if(myTextbox != noone){
 	}
 }
 
-if (practiceComplete == 0)
+if (!audio_is_playing(snd_stat_up) && practiceBonus)
 {
-	practiceComplete = irandom_range(5, 8)
+	audio_play_sound(snd_activity_instrument, 100, false);
+	practiceBonus = false;
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_instrument))
+{
+	audio_stop_sound(snd_activity_instrument);
 }

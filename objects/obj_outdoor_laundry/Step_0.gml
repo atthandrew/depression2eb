@@ -66,3 +66,8 @@ if(myTextbox != noone)
 		}
 	}
 }
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_laundry))
+{
+	audio_stop_sound(snd_outdoor_laundry);
+}

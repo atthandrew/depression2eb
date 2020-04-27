@@ -22,29 +22,33 @@ if(myTextbox != noone){
 					obj_game.mHealth++;
 					obj_game.pHealth--; 
 					obj_game.sHealth++;
-					audio_play_sound(snd_activity_book, 100, false);
-					daysRead++;
+					obj_game.daysRead++;
 			
-					if (daysRead == readComplete)
+					if (obj_game.daysRead == obj_game.readComplete)
 					{
-						bookQuality = irandom_range(1, 5);
-						if (bookQuality < 5)
+						bookQuality = irandom_range(1, 3);
+						if (bookQuality < 3)
 						{
 							myText[1] = "You finished a pretty good book.";
 							myTextbox.greenText[1] = "S+ M+ ";
 							myTextbox.redText[1] = "E- P-";
+							advance_textbox_page(myTextbox, self);
+							awaitinput = false;
+							obj_game.readComplete = 0;
+							obj_game.daysRead = 0;
 						}
 						else
 						{
+							bookBonus = true;
 							myText[1] = "You finished an amazing book! (M+)";
 							myTextbox.greenText[1] = "S+ M++ ";
 							myTextbox.redText[1] = "E- P-";
 							obj_game.mHealth++;
+							advance_textbox_page(myTextbox, self);
+							awaitinput = false;
+							obj_game.readComplete = 0;
+							obj_game.daysRead = 0;
 						}
-						advance_textbox_page(myTextbox, self);
-						awaitinput = false;
-						readComplete = 0;
-						daysRead = 0;
 					}
 					else
 					{
@@ -53,6 +57,14 @@ if(myTextbox != noone){
 						myTextbox.redText[1] = "E- P-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
+					}
+					if (bookBonus)
+					{
+						audio_play_sound(snd_stat_up, 100, false);
+					}
+					else
+					{
+						audio_play_sound(snd_activity_book, 100, false);
 					}
 				}
 				else
@@ -84,7 +96,13 @@ if(myTextbox != noone){
 	}
 }
 
-if (readComplete == 0)
+if(!audio_is_playing(snd_stat_up) && bookBonus)
 {
-	readComplete = irandom_range(3, 5);
+	audio_play_sound(snd_activity_book, 100, false);
+	bookBonus = false;
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_book))
+{
+	audio_stop_sound(snd_activity_book);
 }

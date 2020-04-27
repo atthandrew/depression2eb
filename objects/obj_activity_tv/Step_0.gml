@@ -22,12 +22,11 @@ if(myTextbox != noone){
 					obj_game.mHealth++;
 					obj_game.pHealth--;
 					obj_game.sHealth++;
-					audio_play_sound(snd_activity_tv, 100, false);
-					daysWatched++;
+					obj_game.daysWatched++;
 			
-					if (daysWatched == showComplete)
+					if (obj_game.daysWatched == obj_game.showComplete)
 					{
-						if (showComplete == 1)
+						if (obj_game.showComplete == 1)
 						{
 							movieQuality = irandom_range(1, 5)
 							if (movieQuality < 5)
@@ -35,36 +34,50 @@ if(myTextbox != noone){
 								myText[1] = "You watched a pretty great movie.";
 								myTextbox.greenText[1] = "S+ M+ ";
 								myTextbox.redText[1] = "E- P-";
+								advance_textbox_page(myTextbox, self);
+								awaitinput = false;
+								obj_game.showComplete = 0;
+								obj_game.daysWatched = 0;
 							}
 							else
 							{
+								showBonus = true;
 								myText[1] = "You watched one of the greatest movies you've ever seen! (M+)";
 								myTextbox.greenText[1] = "S+ M++ ";
 								myTextbox.redText[1] = "E- P-";
 								obj_game.mHealth++;
+								advance_textbox_page(myTextbox, self);
+								awaitinput = false;
+								obj_game.showComplete = 0;
+								obj_game.daysWatched = 0;
 							}
 						}
-						else if (showComplete > 1)
+						else if (obj_game.showComplete > 1)
 						{
-							showQuality = irandom_range(1, 5)
-							if (showQuality < 5)
+							showQuality = irandom_range(1, 3)
+							if (showQuality < 3)
 							{
 								myText[1] = "You finshed a pretty great series.";
 								myTextbox.greenText[1] = "S+ M+ ";
 								myTextbox.redText[1] = "E- P-";
+								advance_textbox_page(myTextbox, self);
+								awaitinput = false;
+								obj_game.showComplete = 0;
+								obj_game.daysWatched = 0;
 							}
 							else
 							{
+								showBonus = true;
 								myText[1] = "You finished one of your new favorite series! (M+)"
 								myTextbox.greenText[1] = "S+ M++ ";
 								myTextbox.redText[1] = "E- P-";
 								obj_game.mHealth++;
+								advance_textbox_page(myTextbox, self);
+								awaitinput = false;
+								obj_game.showComplete = 0;
+								obj_game.daysWatched = 0;
 							}
 						}
-						advance_textbox_page(myTextbox, self);
-						awaitinput = false;
-						showComplete = 0;
-						daysWatched = 0;
 					}
 					else
 					{
@@ -73,6 +86,14 @@ if(myTextbox != noone){
 						myTextbox.redText[1] = "E- P-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
+					}
+					if(showBonus)
+					{
+						audio_play_sound(snd_stat_up, 100, false);
+					}
+					else
+					{
+						audio_play_sound(snd_activity_show, 100, false);
 					}
 				}
 				else
@@ -103,28 +124,38 @@ if(myTextbox != noone){
 					obj_game.pHealth++;
 					obj_game.sHealth--;
 					obj_game.days_since_work = 0;
-					daysListened++;
-					audio_play_sound(snd_activity_tv, 100, false);
+					obj_game.daysListened++;
 			
-					if (daysListened == songsComplete)
+					if (obj_game.daysListened == obj_game.songsComplete)
 					{
 						songDance = irandom_range(1, 2)
 						if (songDance == 1)
 						{
+							danceBonus = true;
 							myText[1] = "You discovered a great new artist!";
-							myTextbox.greenText[1] = "P+ M+ ";
+							myTextbox.greenText[1] = "P+ M++ ";
 							myTextbox.redText[1] = "E- S-";
+							obj_game.mHealth++;
+							advance_textbox_page(myTextbox, self);
+							awaitinput = false;
+							obj_game.songsComplete = 0;
+							obj_game.daysListened = 0;
 						}
 						else
 						{
-							danceBonus++;
-							if (danceBonus == 3)
+							obj_game.danceCount++;
+							if (obj_game.danceCount == 2)
 							{
+								danceBonus = true;
 								myText[1] = "You've really improved your dancing and showed off a video to some friends! (S+)";
-								myTextbox.greenText[1] = "P+ M+ S+";
+								myTextbox.greenText[1] = "P+ M+ ";
 								myTextbox.redText[1] = "E-";
 								obj_game.sHealth++;
-								danceBonus = 0;
+								advance_textbox_page(myTextbox, self);
+								awaitinput = false;
+								obj_game.songsComplete = 0;
+								obj_game.daysListened = 0;
+								obj_game.danceCount = 0;
 							}
 							else
 							{
@@ -133,10 +164,6 @@ if(myTextbox != noone){
 								myTextbox.redText[1] = "E- S-";
 							}
 						}
-						advance_textbox_page(myTextbox, self);
-						awaitinput = false;
-						songsComplete = 0;
-						daysListened = 0;
 					}
 					else
 					{
@@ -145,6 +172,14 @@ if(myTextbox != noone){
 						myTextbox.redText[1] = "E- S-";
 						advance_textbox_page(myTextbox, self);
 						awaitinput = false;
+					}
+					if(danceBonus)
+					{
+						audio_play_sound(snd_stat_up, 100, false);
+					}
+					else
+					{
+						audio_play_sound(snd_activity_dance, 100, false);
 					}
 				}
 				else
@@ -176,12 +211,24 @@ if(myTextbox != noone){
 	}
 }
 
-if (showComplete == 0)
+if(!audio_is_playing(snd_stat_up) && showBonus)
 {
-	showComplete = irandom_range(1, 5);
+	audio_play_sound(snd_activity_show, 100, false);
+	showBonus = false;
 }
 
-if (songsComplete == 0)
+if(!audio_is_playing(snd_stat_up) && danceBonus)
 {
-	songsComplete = irandom_range(1, 3);
+	audio_play_sound(snd_activity_dance, 100, false);
+	danceBonus = false;
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_show))
+{
+	audio_stop_sound(snd_activity_show);
+}
+
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_dance))
+{
+	audio_stop_sound(snd_activity_dance);
 }

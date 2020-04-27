@@ -8,3 +8,4 @@ myText[0] = "Go to the movies alone or with friends?\n 1 to go alone (E- M+ P- S
 myName = "Theatre";
 
 filmQuality = 0;
+filmBonus = false;
