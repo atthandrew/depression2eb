@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "396b2f61-1f97-4496-9839-bdaf5d9c78b0",
+            "Value": {
+                "id": "c4588a75-f35b-4d69-b9ab-3d79c49102f9",
+                "resourcePath": "sprites\\spr_player_side\\spr_player_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d1f8883-70c7-4efc-acbd-1cbf066585ab",
             "Value": {
                 "id": "76dbf291-b5d9-4a0e-824b-68dddc246e98",
@@ -316,6 +324,14 @@
                 "id": "daf82033-6eae-43c3-ac9e-ac265ff69cf9",
                 "resourcePath": "objects\/obj_activity_book\/obj_activity_book.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "49546f04-6611-4b84-83cb-2e17f369374a",
+            "Value": {
+                "id": "49499d30-64a6-4c33-9448-53f8a370043b",
+                "resourcePath": "sprites\\spr_activity_art\\spr_activity_art.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1002,7 +1018,7 @@
             "Key": "d76d82a9-cb5e-4a36-8487-ca13920bed2a",
             "Value": {
                 "id": "018a7f79-25ce-4a67-af74-009c12a75463",
-                "resourcePath": "sprites\\spr_placeholder\\spr_placeholder.yy",
+                "resourcePath": "sprites\\spr_activity_meditate\\spr_activity_meditate.yy",
                 "resourceType": "GMSprite"
             }
         },
