@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "23cec58a-b35e-45fc-9740-d81fe0fcbceb",
+            "Value": {
+                "id": "11216b18-359a-4b88-977b-8737566e6d97",
+                "resourcePath": "sounds\\snd_activity_meditate\\snd_activity_meditate.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "264b47bb-05a4-4245-9c8f-c849d4b94119",
             "Value": {
                 "id": "4191b839-8b20-4d4b-b30f-cf255fe1069d",

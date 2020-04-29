@@ -62,5 +62,11 @@ if(myTextbox != noone){
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_shop))
 {
+	audio_sound_gain(snd_outdoor_shop, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_outdoor_shop) == 0)
+{
 	audio_stop_sound(snd_outdoor_shop);
+	audio_sound_gain(snd_outdoor_shop, 1, 0);
 }

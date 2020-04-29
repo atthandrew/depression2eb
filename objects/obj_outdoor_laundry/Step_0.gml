@@ -6,7 +6,7 @@ if(myTextbox != noone)
 	//TODO (should this be in the create event?)
 	if(obj_game.days_since_laundry > 1 || (obj_game.progress == 1 && obj_game.days_since_laundry != 0))
 	{
-		myText[0] = "Do your laundry?\n 1 to accept (E-1 M+ P- S+)\n 2 to reject";
+		myText[0] = "Do your laundry?\n  1 to accept (E-1 M+ P- S+)\n  2 to reject";
 		if(myTextbox.page == 0 && !is_warning)
 		{
 			awaitinput = true;
@@ -69,5 +69,11 @@ if(myTextbox != noone)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_laundry))
 {
+	audio_sound_gain(snd_outdoor_laundry, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_outdoor_laundry) == 0)
+{
 	audio_stop_sound(snd_outdoor_laundry);
+	audio_sound_gain(snd_outdoor_laundry, 1, 0);
 }

@@ -167,7 +167,7 @@ if((room == rm_mainmenu || room == rm_daytransition) && !audio_is_playing(MenuMu
 }
 if(room != rm_mainmenu && room != rm_daytransition)
 {
-	audio_sound_gain(MenuMusic, 0, 1000)
+	audio_sound_gain(MenuMusic, 0, 1000);
 }
 if (audio_sound_get_gain(MenuMusic) == 0)
 {

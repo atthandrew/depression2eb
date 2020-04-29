@@ -124,5 +124,11 @@ if(!audio_is_playing(snd_stat_up) && artBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_art))
 {
+	audio_sound_gain(snd_activity_art, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_art) == 0)
+{
 	audio_stop_sound(snd_activity_art);
+	audio_sound_gain(snd_activity_art, 1, 0);
 }

@@ -104,5 +104,11 @@ if(!audio_is_playing(snd_stat_up) && bookBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_book))
 {
+	audio_sound_gain(snd_activity_book, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_book) == 0)
+{
 	audio_stop_sound(snd_activity_book);
+	audio_sound_gain(snd_activity_book, 1, 0);
 }

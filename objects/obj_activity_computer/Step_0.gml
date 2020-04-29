@@ -123,10 +123,22 @@ if(!audio_is_playing(snd_stat_up) && workBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_computerGame))
 {
+	audio_sound_gain(snd_activity_computerGame, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_computerGame) == 0)
+{
 	audio_stop_sound(snd_activity_computerGame);
+	audio_sound_gain(snd_activity_computerGame, 1, 0);
 }
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_computerWork))
 {
+	audio_sound_gain(snd_activity_computerWork, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_computerWork) == 0)
+{
 	audio_stop_sound(snd_activity_computerWork);
+	audio_sound_gain(snd_activity_computerWork, 1, 0);
 }

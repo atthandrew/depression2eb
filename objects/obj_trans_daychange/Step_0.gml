@@ -9,7 +9,7 @@ myTextbox.name = "You";
 
 if (obj_game.progress == 3)
 {
-	myText[0] = "You seemed a little run down today. Is everything alright?\n 1 - That's pretty normal.\n 2 - I'm sure it's nothing to worry about.\n 3 - Nothing I can do about it.";
+	myText[0] = "You seemed a little run down today. Is everything alright?\n  1 - That's pretty normal.\n  2 - I'm sure it's nothing to worry about.\n  3 - Nothing I can do about it.";
 	if(myTextbox.page == 0)
 	{
 		awaitinput = true;
@@ -32,7 +32,7 @@ if (obj_game.progress == 3)
 			awaitinput = false;
 		}
 	}
-	myText[2] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[2] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 2)
 	{
 		awaitinput = true;
@@ -71,7 +71,7 @@ if (obj_game.progress == 3)
 
 else if (obj_game.progress == 5)
 {
-	myText[0] = "You seemed to be struggling today. How often do you find yourself unable to find the motivation to perform otherwise normal tasks?\n 1 - Only occasionally.\n 2 - Not often enough to worry about it.\n 3 - Pretty frequently.";
+	myText[0] = "You seemed to be struggling today. How often do you find yourself unable to find the motivation to perform otherwise normal tasks?\n  1 - Only occasionally.\n  2 - Not often enough to worry about it.\n  3 - Pretty frequently.";
 	if(myTextbox.page == 0)
 	{
 		awaitinput = true;
@@ -94,7 +94,7 @@ else if (obj_game.progress == 5)
 			awaitinput = false;
 		}
 	}
-	myText[2] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[2] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 2)
 	{
 		awaitinput = true;
@@ -133,7 +133,7 @@ else if (obj_game.progress == 5)
 
 else if (obj_game.progress == 7)
 {
-	myText[0] = "Today seemed a bit better. How often does there have to be bad days for you to consider it a problem?\n 1 - Depends on how bad the days are.\n 2 - Depends on how much my responsibilites are impacted.\n 3 - Almost constantly.";
+	myText[0] = "Today seemed a bit better. How often does there have to be bad days for you to consider it a problem?\n  1 - Depends on how bad the days are.\n  2 - Depends on how much my responsibilites are impacted.\n  3 - Almost constantly.";
 	if(myTextbox.page == 0)
 	{
 		awaitinput = true;
@@ -156,7 +156,7 @@ else if (obj_game.progress == 7)
 			awaitinput = false;
 		}
 	}
-	myText[2] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[2] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 2)
 	{
 		awaitinput = true;
@@ -195,7 +195,7 @@ else if (obj_game.progress == 7)
 
 else if (obj_game.progress == 9)
 {
-	myText[0] = "I'm sorry today was so awful. I promise it will get better. Have you considered seeking treatment?\n 1 - I've never thought about it, but I don't think it's bad enough to go that far. Some people have it worse.\n 2 - I don't have the kind of resources to seek treatment.\n 3 - I've tried before and it didn't work. This is just the way I am.";
+	myText[0] = "I'm sorry today was so awful. I promise it will get better. Have you considered seeking treatment?\n  1 - I've never thought about it, but I don't think it's bad enough to go that far. Some people have it worse.\n  2 - I don't have the kind of resources to seek treatment.\n  3 - I've tried before and it didn't work. This is just the way I am.";
 	if(myTextbox.page == 0)
 	{
 		awaitinput = true;
@@ -218,7 +218,7 @@ else if (obj_game.progress == 9)
 			awaitinput = false;
 		}
 	}
-	myText[2] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[2] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 2)
 	{
 		awaitinput = true;
@@ -257,7 +257,7 @@ else if (obj_game.progress == 9)
 
 else if (obj_game.progress == 10)
 {
-	myText[0] = "Today still seemed a little tough. How are you doing?\n 1 - I'm okay, just a little run down.\n 2 - I'm not doing so great...\n 3 - I'm used to it at this point.";
+	myText[0] = "Today still seemed a little tough. How are you doing?\n  1 - I'm okay, just a little run down.\n  2 - I'm not doing so great...\n  3 - I'm used to it at this point.";
 	if(myTextbox.page == 0)
 	{
 		awaitinput = true;
@@ -280,7 +280,7 @@ else if (obj_game.progress == 10)
 			awaitinput = false;
 		}
 	}
-	myText[2] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[2] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 2)
 	{
 		awaitinput = true;
@@ -319,7 +319,7 @@ else if (obj_game.progress == 10)
 
 else if (obj_game.progress == 12)
 {
-	myText[0] = "You seem to be doing better since you started seeking treatment. Do you think it has helped?\n 1 - I haven't noticed too much of a change honestly.\n 2 - Not enough to stick with it.\n 3 - I've noticed some improvement.";
+	myText[0] = "You seem to be doing better since you started seeking treatment. Do you think it has helped?\n  1 - I haven't noticed too much of a change honestly.\n  2 - Not enough to stick with it.\n  3 - I've noticed some improvement.";
 	if(myTextbox.page == 0)
 	{
 		awaitinput = true;
@@ -342,7 +342,7 @@ else if (obj_game.progress == 12)
 			awaitinput = false;
 		}
 	}
-	myText[2] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[2] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 2)
 	{
 		awaitinput = true;
@@ -381,7 +381,7 @@ else if (obj_game.progress == 12)
 
 else
 {
-	myText[0] = "Continue to the next day?\n 1 to accept\n 2 to reject";
+	myText[0] = "Continue to the next day?\n  1 to accept\n  2 to reject";
 	if(myTextbox.page == 0){
 		awaitinput = true;
 		if(keyboard_check_pressed(ord("1"))){

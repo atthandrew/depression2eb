@@ -225,10 +225,22 @@ if(!audio_is_playing(snd_stat_up) && danceBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_show))
 {
+	audio_sound_gain(snd_activity_show, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_show) == 0)
+{
 	audio_stop_sound(snd_activity_show);
+	audio_sound_gain(snd_activity_show, 1, 0);
 }
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_dance))
 {
+	audio_sound_gain(snd_activity_dance, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_dance) == 0)
+{
 	audio_stop_sound(snd_activity_dance);
+	audio_sound_gain(snd_activity_dance, 1, 0);
 }

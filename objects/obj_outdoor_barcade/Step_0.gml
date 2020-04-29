@@ -95,10 +95,22 @@ if(!audio_is_playing(snd_stat_up) && arcadeBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_arcade))
 {
+	audio_sound_gain(snd_outdoor_arcade, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_outdoor_arcade) == 0)
+{
 	audio_stop_sound(snd_outdoor_arcade);
+	audio_sound_gain(snd_outdoor_arcade, 1, 0);
 }
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_bar))
 {
+	audio_sound_gain(snd_outdoor_bar, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_outdoor_bar) == 0)
+{
 	audio_stop_sound(snd_outdoor_bar);
+	audio_sound_gain(snd_outdoor_bar, 1, 0);
 }

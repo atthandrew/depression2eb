@@ -75,5 +75,11 @@ if(!audio_is_playing(snd_stat_up) && snackBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_fridge))
 {
+	audio_sound_gain(snd_activity_fridge, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_fridge) == 0)
+{
 	audio_stop_sound(snd_activity_fridge);
+	audio_sound_gain(snd_activity_fridge, 1, 0);
 }

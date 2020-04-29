@@ -105,5 +105,11 @@ if(!audio_is_playing(snd_stat_up) && mealBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_cook))
 {
+	audio_sound_gain(snd_activity_cook, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_cook) == 0)
+{
 	audio_stop_sound(snd_activity_cook);
+	audio_sound_gain(snd_activity_cook, 1, 0);
 }

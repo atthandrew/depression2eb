@@ -118,5 +118,11 @@ if(!audio_is_playing(snd_stat_up) && filmBonus)
 
 if(!instance_exists(obj_textbox) && audio_is_playing(snd_outdoor_theatre))
 {
+	audio_sound_gain(snd_outdoor_theatre, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_outdoor_theatre) == 0)
+{
 	audio_stop_sound(snd_outdoor_theatre);
+	audio_sound_gain(snd_outdoor_theatre, 1, 0);
 }

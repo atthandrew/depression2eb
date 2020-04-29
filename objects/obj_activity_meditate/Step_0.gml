@@ -11,9 +11,7 @@ if(myTextbox != noone){
 				obj_game.mHealth++;
 				obj_game.pHealth++; 
 				obj_game.sHealth--;
-				//Fade out music
-				//audio_sound_gain(GameMusic, 0, 500)
-				
+				audio_play_sound(snd_activity_meditate, 100, false);
 					
 				myText[1] = "You focus on your breathing and find your center.";
 				
@@ -38,8 +36,13 @@ if(myTextbox != noone){
 	}
 }
 
-//Fade in music
-//if(!instance_exists(obj_textbox) && audio_sound_get_gain(GameMusic) == 0)
-//{
-//	audio_sound_gain(GameMusic, 1, 500)
-//}
+if(!instance_exists(obj_textbox) && audio_is_playing(snd_activity_meditate))
+{
+	audio_sound_gain(snd_activity_meditate, 0, 250);
+}
+
+if(audio_sound_get_gain(snd_activity_meditate) == 0)
+{
+	audio_stop_sound(snd_activity_meditate);
+	audio_sound_gain(snd_activity_meditate, 1, 0);
+}
