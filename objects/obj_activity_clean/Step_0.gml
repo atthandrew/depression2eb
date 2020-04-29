@@ -22,6 +22,7 @@ if(myTextbox != noone){
 					obj_game.mHealth++;
 					obj_game.pHealth--;
 					obj_game.sHealth++;
+					obj_game.days_since_cleaning = 0;
 					audio_play_sound(snd_activity_clean, 100, false);
 			
 					myText[1] = "The house looks much better now";

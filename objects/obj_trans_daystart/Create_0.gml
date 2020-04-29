@@ -44,6 +44,7 @@ else{
 			myText[textPos] = "You wake up feeling a little more worn down than usual.";
 			myTextbox.redText[textPos] = "E-";
 			myTextbox.greenText[textPos] = "";
+			audio_play_sound(snd_stat_down, 100, false);
 			textPos++;
 			myText[textPos] = "On certain days the fridge will be restocked. Interacting with the fridge when its stocked will replenish 1 energy.";
 			myTextbox.name = "You";
@@ -58,6 +59,7 @@ else{
 			myText[textPos] = "The idea of having to leave your house and see other people today fills you with dread.";
 			myTextbox.redText[textPos] = "M- P- S-";
 			myTextbox.greenText[textPos] = "";
+			audio_play_sound(snd_stat_down, 100, false);
 			textPos++;
 			myText[textPos] = "No outdoor activities are available today.";
 			myTextbox.name = "You";
@@ -67,6 +69,7 @@ else{
 			myText[textPos] = "It took a lot of willpower to get out of bed today.";
 			myTextbox.redText[textPos] = "E-- M-";
 			myTextbox.greenText[textPos] = "";
+			audio_play_sound(snd_stat_down, 100, false);
 			myTextbox.name = "You";
 		break;
 		
@@ -74,6 +77,7 @@ else{
 			myText[textPos] = "You woke up a few minutes before your alarm feeling refreshed.";
 			myTextbox.greenText[textPos] = "P+ ";
 			myTextbox.redText[textPos] = "";
+			audio_play_sound(snd_stat_up, 100, false);
 			myTextbox.name = "You";
 		break;
 		
@@ -81,6 +85,7 @@ else{
 			myText[textPos] = "You felt better yesterday, but you're starting to worry there is a pattern here.";
 			myTextbox.redText[textPos] = "M-- S-";
 			myTextbox.greenText[textPos] = "";
+			audio_play_sound(snd_stat_down, 100, false);
 			myTextbox.name = "You";
 		break;
 		
@@ -88,6 +93,7 @@ else{
 			myText[textPos] = "You feel as though an invisible force is weighing you down, so heavy you can barely move.";
 			myTextbox.redText[textPos] = "E-- M-- P-- S--";
 			myTextbox.greenText[textPos] = "";
+			audio_play_sound(snd_stat_down, 100, false);
 			textPos++;
 			myText[textPos] = "You can't bring yourself to so much as leave your room today, and you certainly can't work.";
 			myTextbox.name = "You";
@@ -97,6 +103,7 @@ else{
 			myText[textPos] = "Yesterday was really rough. You're still a little worn out from it. Maybe you need help.";
 			myTextbox.redText[textPos] = "E-";
 			myTextbox.greenText[textPos] = "";
+			audio_play_sound(snd_stat_down, 100, false);
 			myTextbox.name = "You";
 		break;
 		
@@ -104,6 +111,7 @@ else{
 			myText[textPos] = "You opened up to a friend about how you've been struggling. It took some explaining, but they were really understanding.";
 			myTextbox.greenText[textPos] = "S+ ";
 			myTextbox.redText[textPos] = "";
+			audio_play_sound(snd_stat_up, 100, false);
 			myTextbox.name = "You";
 		break;
 		
@@ -111,6 +119,7 @@ else{
 			myText[textPos] = "After further discussion with your friend, you've decided to seek professional help.";
 			myTextbox.greenText[textPos] = "M+ P+ S+ ";
 			myTextbox.redText[textPos] = "";
+			audio_play_sound(snd_stat_up, 100, false);
 			myTextbox.name = "You";
 		break;
 		
@@ -124,40 +133,60 @@ else{
 		break;
 	}
 	
-	if (obj_game.days_since_shower > 2)
+	if (obj_game.days_since_shower > 2 && obj_game.progress != 1)
 	{
 		textPos++;
 		myText[textPos] = "It's been a while since you showered and the grime is starting to build up.";
 		myTextbox.redText[textPos] = "P- S-";
 		myTextbox.greenText[textPos] = "";
+		if(!audio_is_playing(snd_stat_down))
+		{
+			audio_play_sound(snd_stat_down, 100, false);
+		}
 	}
-	if (obj_game.days_since_work > 3)
+	if (obj_game.days_since_work > 3 && obj_game.progress != 1)
 	{
 		textPos++;
 		myText[textPos] = "It's been a while since you did any work and your boss isn't very happy.";
 		myTextbox.redText[textPos] = "M- P-";
 		myTextbox.greenText[textPos] = "";
+		if(!audio_is_playing(snd_stat_down))
+		{
+			audio_play_sound(snd_stat_down, 100, false);
+		}
 	}
-	if (obj_game.days_since_cooking > 4)
+	if (obj_game.days_since_cooking > 4 && obj_game.progress != 1)
 	{
 		textPos++;
 		myText[textPos] = "It's been a while since you cooked anything and the takeout bill is starting to build up.";
 		myTextbox.redText[textPos] = "M- P-";
 		myTextbox.greenText[textPos] = "";
+		if(!audio_is_playing(snd_stat_down))
+		{
+			audio_play_sound(snd_stat_down, 100, false);
+		}
 	}
-	if (obj_game.days_since_laundry > 5)
+	if (obj_game.days_since_laundry > 5 && obj_game.progress != 1)
 	{
 		textPos++;
 		myText[textPos] = "It's been a while since you did any laundry and your clothes are starting to stink.";
 		myTextbox.redText[textPos] = "M- S-";
 		myTextbox.greenText[textPos] = "";
+		if(!audio_is_playing(snd_stat_down))
+		{
+			audio_play_sound(snd_stat_down, 100, false);
+		}
 	}
-	if (obj_game.days_since_cleaning > 6)
+	if (obj_game.days_since_cleaning > 6 && obj_game.progress != 1)
 	{
 		textPos++;
 		myText[textPos] = "It's been a while since you cleaned the house and the garbage is starting to form factions.";
 		myTextbox.redText[textPos] = "M- S-";
 		myTextbox.greenText[textPos] = "";
+		if(!audio_is_playing(snd_stat_down))
+		{
+			audio_play_sound(snd_stat_down, 100, false);
+		}
 	}
 	
 }

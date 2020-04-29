@@ -138,13 +138,25 @@ if(mHealth > 10)
 {
 	mHealth = 10;
 }
+if(mHealth < 0)
+{
+	mHealth = 0;
+}
 if(pHealth > 10)
 {
 	pHealth = 10;
 }
+if(pHealth < 0)
+{
+	pHealth = 0;
+}
 if(sHealth > 10)
 {
 	sHealth = 10;
+}
+if(sHealth < 0)
+{
+	sHealth = 0;
 }
 
 //Play menu audio
@@ -170,6 +182,10 @@ if (day == 0)
 else if (progress == 8)
 {
 	desat_strength = 0.9;
+}
+else if (progress == 12)
+{
+	desat_strength = 0;
 }
 else
 {

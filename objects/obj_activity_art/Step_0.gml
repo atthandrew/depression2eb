@@ -108,7 +108,7 @@ if(myTextbox != noone){
 			}
 			else
 			{
-				myText[1] = "You can feel yourself falling asleep already and decide against it.";
+				myText[1] = "You aren't feeling particularly inspired at the moment.";
 				advance_textbox_page(myTextbox, self);
 				awaitinput = false;
 			}

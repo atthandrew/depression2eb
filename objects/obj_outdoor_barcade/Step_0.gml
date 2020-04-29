@@ -32,7 +32,7 @@ if(myTextbox != noone){
 					advance_textbox_page(myTextbox, self);
 					awaitinput = false;
 				}
-				if(filmBonus)
+				if(arcadeBonus)
 				{
 					audio_play_sound(snd_stat_up, 100, false);
 				}

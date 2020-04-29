@@ -14,6 +14,11 @@ if(myTextbox.page == 1){
 		obj_game.progress = 1;
 		obj_game.day = 0;
 		obj_game.energy = 3;
+		obj_game.days_since_shower = 1;
+		obj_game.days_since_work = 1;
+		obj_game.days_since_cooking = 1;
+		obj_game.days_since_laundry = 1;
+		obj_game.days_since_cleaning = 1;
 		obj_game.bed = false;
 		room_goto(rm_mainmenu);
 	}

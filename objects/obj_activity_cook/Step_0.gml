@@ -23,6 +23,7 @@ if(myTextbox != noone){
 					obj_game.pHealth++;
 					obj_game.sHealth--;
 					obj_game.daysCooked++;
+					obj_game.days_since_cooking = 0;
 			
 					if (obj_game.daysCooked == obj_game.recipeComplete)
 					{
