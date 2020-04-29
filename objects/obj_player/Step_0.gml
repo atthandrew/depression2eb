@@ -29,43 +29,62 @@ if(!obj_game.paused){
 		y += moveY;
 		
 		dir = round(dir);
+		image_xscale = 1;
 		
 		switch(dir){
 			case 0:
-				image_index = 1;
+				sprite_index = spr_player_side;
+				default_index = 0;
 			break;
 			
 			case 45:
+				sprite_index = spr_player;
 				image_index = 2;
+				default_index = 2;
 			break;
 			
 			case 90:
+				sprite_index = spr_player;
 				image_index = 2;
+				default_index = 2;
 			break;
 			
 			case 135:
+				sprite_index = spr_player;
 				image_index = 2;
+				default_index = 2;
 			break;
 			
 			case 180:
-				image_index = 3;
+				sprite_index = spr_player_side;
+				image_xscale = -1;
+				default_index = 0;
 			break;
 			
 			case 225:
+				sprite_index = spr_player;
 				image_index = 0;
+				default_index = 0;
 			break;
 			
 			case 270:
+				sprite_index = spr_player;
 				image_index = 0;
+				default_index = 0;
 			break;
 			
 			case 315:
+				sprite_index = spr_player;
 				image_index = 0;
+				default_index = 0;
 			break;
 			
 			default:
 			
 			break;
 		}
+	}
+	else{
+		image_index = default_index;
 	}
 }

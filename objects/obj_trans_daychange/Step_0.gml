@@ -1,5 +1,9 @@
 event_inherited();
 
+if(obj_fade.fadeout == true){
+	exit;
+}
+
 //Handle user input from the textbox for certain pages
 myTextbox.name = "You";
 
@@ -126,7 +130,8 @@ else
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2"))){
