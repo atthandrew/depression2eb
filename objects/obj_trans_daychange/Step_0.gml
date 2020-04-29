@@ -41,7 +41,9 @@ if (obj_game.progress == 3)
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadein = false;
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
@@ -103,7 +105,9 @@ else if (obj_game.progress == 5)
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadein = false;
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
@@ -165,7 +169,9 @@ else if (obj_game.progress == 7)
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadein = false;
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
@@ -227,7 +233,9 @@ else if (obj_game.progress == 9)
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadein = false;
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
@@ -289,7 +297,9 @@ else if (obj_game.progress == 10)
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadein = false;
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
@@ -351,7 +361,9 @@ else if (obj_game.progress == 12)
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
-			room_goto(rm_house);
+			obj_fade.fadein = false;
+			obj_fade.fadeout = true;
+			//room_goto(rm_house); <- done in obj_fade
 		}
 	
 		if(keyboard_check_pressed(ord("2")))
@@ -388,6 +400,7 @@ else
 			awaitinput = false;
 			special_activity_effects();
 			instance_destroy(myTextbox);
+			obj_fade.fadein = false;
 			obj_fade.fadeout = true;
 			//room_goto(rm_house); <- done in obj_fade
 		}

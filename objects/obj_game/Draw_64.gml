@@ -30,7 +30,7 @@ if(room == rm_house || room == rm_map){
 		draw_set_color(c_red);
 	bar_offset = string_width(phys_string) + bar_spacing * 2;
 	for(var i = 0; i < energy; i++){
-		draw_line_width(bar_offset, 20, bar_offset, 20 + string_height(energy_string), bar_width);
+		draw_line_width(bar_offset, 20 + 2, bar_offset, 20 + string_height(energy_string) - 2, bar_width);
 		bar_offset += bar_spacing;
 	}
 	
@@ -42,7 +42,7 @@ if(room == rm_house || room == rm_map){
 		draw_set_color(c_red);
 	bar_offset = string_width(phys_string) + bar_spacing * 2;
 	for(var i = 0; i < mHealth; i++){
-		draw_line_width(bar_offset, 40, bar_offset, 40 + string_height(energy_string), bar_width);
+		draw_line_width(bar_offset, 40 + 2, bar_offset, 40 + string_height(energy_string) - 2, bar_width);
 		bar_offset += bar_spacing;
 	}
 	
@@ -54,7 +54,7 @@ if(room == rm_house || room == rm_map){
 		draw_set_color(c_red);
 	bar_offset = string_width(phys_string) + bar_spacing * 2;
 	for(var i = 0; i < pHealth; i++){
-		draw_line_width(bar_offset, 60, bar_offset, 60 + string_height(energy_string), bar_width);
+		draw_line_width(bar_offset, 60 + 2, bar_offset, 60 + string_height(energy_string) - 2, bar_width);
 		bar_offset += bar_spacing;
 	}
 	
@@ -66,7 +66,7 @@ if(room == rm_house || room == rm_map){
 		draw_set_color(c_red);
 	bar_offset = string_width(phys_string) + bar_spacing * 2;
 	for(var i = 0; i < sHealth; i++){
-		draw_line_width(bar_offset, 80, bar_offset, 80 + string_height(energy_string), bar_width);
+		draw_line_width(bar_offset, 80 + 2, bar_offset, 80 + string_height(energy_string) - 2, bar_width);
 		bar_offset += bar_spacing;
 	}
 }

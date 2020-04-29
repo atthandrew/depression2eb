@@ -38,21 +38,18 @@ if(!obj_game.paused){
 			break;
 			
 			case 45:
-				sprite_index = spr_player;
-				image_index = 2;
-				default_index = 2;
+				sprite_index = spr_player_back;
+				default_index = 7;
 			break;
 			
 			case 90:
-				sprite_index = spr_player;
-				image_index = 2;
-				default_index = 2;
+				sprite_index = spr_player_back;
+				default_index = 7;
 			break;
 			
 			case 135:
-				sprite_index = spr_player;
-				image_index = 2;
-				default_index = 2;
+				sprite_index = spr_player_back;
+				default_index = 7;
 			break;
 			
 			case 180:
@@ -62,21 +59,18 @@ if(!obj_game.paused){
 			break;
 			
 			case 225:
-				sprite_index = spr_player;
-				image_index = 0;
-				default_index = 0;
+				sprite_index = spr_player_front;
+				default_index = 7;
 			break;
 			
 			case 270:
-				sprite_index = spr_player;
-				image_index = 0;
-				default_index = 0;
+				sprite_index = spr_player_front;
+				default_index = 7;
 			break;
 			
 			case 315:
-				sprite_index = spr_player;
-				image_index = 0;
-				default_index = 0;
+				sprite_index = spr_player_front;
+				default_index = 7;
 			break;
 			
 			default:
@@ -87,4 +81,7 @@ if(!obj_game.paused){
 	else{
 		image_index = default_index;
 	}
+}
+else{
+	image_index = default_index;
 }

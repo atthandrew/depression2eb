@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "065763a2-f718-413d-86a5-81acaad599ed",
+            "Value": {
+                "id": "8172ac51-8a30-4266-8919-b7f81201c80c",
+                "resourcePath": "fonts\/ft_textbox4\/ft_textbox4.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "075a7d2c-4ae7-4d4a-9da3-fd3a7bb9b19d",
             "Value": {
                 "id": "d3cd0bc4-9968-43ac-8ae5-67e50a7370f1",
@@ -108,6 +116,14 @@
                 "id": "05366cb3-de0e-4395-a2a0-47e5d1a27537",
                 "resourcePath": "views\/1722b09a-5420-4507-a642-af5dd4bdac9c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1a517ca2-3072-4c83-8010-02f2200ab68e",
+            "Value": {
+                "id": "7ae443dc-2fe2-4e65-91cf-61efe237ac22",
+                "resourcePath": "fonts\/ft_textbox1\/ft_textbox1.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -178,7 +194,7 @@
             "Key": "23cec58a-b35e-45fc-9740-d81fe0fcbceb",
             "Value": {
                 "id": "11216b18-359a-4b88-977b-8737566e6d97",
-                "resourcePath": "sounds\\snd_activity_meditate\\snd_activity_meditate.yy",
+                "resourcePath": "sounds\/snd_activity_meditate\/snd_activity_meditate.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -298,7 +314,7 @@
             "Key": "3afb5244-e2c3-4119-b0e0-17661dfe6487",
             "Value": {
                 "id": "d49f8af5-c95c-4345-8122-81d0c03b4a0b",
-                "resourcePath": "sprites\\spr_player_front\\spr_player_front.yy",
+                "resourcePath": "sprites\/spr_player_front\/spr_player_front.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -530,7 +546,7 @@
             "Key": "723ab5d2-89a5-46d2-b610-fee5ca86a25c",
             "Value": {
                 "id": "ed0be8f1-0a02-4174-97b0-07aeebe51f41",
-                "resourcePath": "sprites\\spr_player_back\\spr_player_back.yy",
+                "resourcePath": "sprites\/spr_player_back\/spr_player_back.yy",
                 "resourceType": "GMSprite"
             }
         },
