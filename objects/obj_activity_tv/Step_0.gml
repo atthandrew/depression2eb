@@ -162,6 +162,8 @@ if(myTextbox != noone){
 								myText[1] = "You've gotten a little better at dancing.";
 								myTextbox.greenText[1] = "P+ M+ ";
 								myTextbox.redText[1] = "E- S-";
+								advance_textbox_page(myTextbox, self);
+								awaitinput = false;
 							}
 						}
 					}

@@ -6,7 +6,7 @@ if(myTextbox != noone)
 	//TODO (should this be in the create event?)
 	if(obj_game.days_since_laundry > 1 || (obj_game.progress == 1 && obj_game.days_since_laundry != 0))
 	{
-		myText[0] = "Do your laundry?\n  1 to accept (E-1 M+ P- S+)\n  2 to reject";
+		myText[0] = "Do your laundry?\n  1 to accept (E- M+ P- S+)\n  2 to reject";
 		if(myTextbox.page == 0 && !is_warning)
 		{
 			awaitinput = true;
